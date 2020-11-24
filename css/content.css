@@ -1,0 +1,45 @@
+.content strong {
+  font-weight: bold;
+}
+
+.content em {
+  font-style: italic;
+}
+
+.content del {
+  text-decoration: line-through;
+}
+
+.content .centered {
+  text-align: center;
+}
+
+.content blockquote {
+  display: block;
+  width: 100%;
+  background: #efefed;
+  margin: 5px 0;
+  padding: 15px;
+  color: #888;
+}
+
+.content blockquote:before {
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  content: "Quote:";
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.content blockquote[cite]:before {
+  content: "Quote: " attr(cite);
+}
+
+.content ul {
+  list-style: disc inside none;
+}
+
+.content ul li {
+  line-height: 22px;
+}

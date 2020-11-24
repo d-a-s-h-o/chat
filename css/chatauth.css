@@ -1,0 +1,11 @@
+.chatAuth {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  width: 400px;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 18px;
+}

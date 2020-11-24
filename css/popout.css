@@ -1,0 +1,405 @@
+input[type="radio"][name="popout_btn"][value="open"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+}
+
+input[type="radio"][name="popout_btn"][value="close"] {
+  display: none;
+}
+
+input[type="radio"][name="popout_btn"][value="open"]:checked
+  ~ input[type="radio"][name="popout_btn"][value="close"] {
+  display: block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 999998;
+  position: fixed;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.popout-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999997;
+  background: #000;
+  cursor: pointer;
+  display: none;
+}
+
+input[type="radio"][name="popout_btn"][value="open"]:checked ~ .popout-bg {
+  opacity: 0.3;
+  display: block;
+}
+
+input[type="radio"][name="popout_btn"][value="open"]:checked ~ .popout-box {
+  display: block;
+}
+
+.popout-box {
+  position: fixed;
+  z-index: 999999;
+  width: 500px;
+  height: auto;
+  padding: 20px 20px 0 20px;
+  background: #fff;
+  color: #000;
+  display: none;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+  cursor: initial;
+  overflow-y: auto;
+  text-align: left;
+  font-size: 14px;
+  font-weight: normal;
+  max-height: 80%;
+  max-width: 90%;
+  overflow-x: hidden;
+  text-transform: none;
+  line-height: 1;
+}
+
+.popout-box.restricted {
+  max-height: 400px;
+}
+
+.popout-box.login {
+  height: 500px;
+  max-height: 640px;
+  width: 700px;
+  max-width: 95%;
+  border-radius: 10px;
+  padding: 0;
+}
+
+.popout-box.login > form {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 70%;
+  padding: 0 30px;
+  transform: translateY(-50%);
+}
+
+.popout-box.login > form > .heading {
+  color: #9b59b6;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.popout-box.login > form > .inp {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.popout-box.login > form > .inp > label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.popout-box.login > form > .inp input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 15px;
+  margin: 0;
+  border: 1px solid #ccc;
+}
+
+.popout-box.login > form > .inp input:focus {
+  border-color: #9b59b6;
+}
+
+.popout-box.login > form button.standardBtn {
+  background: #9b59b6 !important;
+}
+
+.popout-box.login > form select {
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 0 0 15px;
+  margin: 0;
+  border: 1px solid #ccc;
+}
+
+.popout-box.login > form select:focus {
+  border-color: #9b59b6;
+}
+
+.popout-box.login > form > .captcha_img {
+  display: block;
+  font-size: 0;
+  margin-bottom: 15px;
+}
+
+.popout-box.login > form > .captcha_img > img {
+  display: inline-block;
+  vertical-align: top;
+  width: 150px;
+  height: 50px;
+}
+
+.popout-box.login > form > .captcha_img > input {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 150px);
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid #ccc;
+  padding: 0 15px;
+  font-size: 16px;
+}
+
+.popout-box.login > form > .captcha_img > input:focus {
+  border-color: #9b59b6;
+}
+
+.popout-box.login > form button.standardBtn {
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  text-align: center;
+  line-height: 50px;
+  padding: 0;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.popout-box.fluid {
+  width: auto;
+  min-width: 400px;
+}
+
+.popout-box.fluid > .captcha-field {
+  font-size: 0;
+  margin-bottom: 15px;
+}
+
+.popout-box.fluid > .captcha-field > input {
+  padding: 0 10px;
+  font-size: 16px;
+  border: 1px solid #efefed;
+}
+
+.popout-box.fluid > .captcha-field > input:focus,
+.popout-box.fluid > .captcha-field > input:active {
+  border-color: #9b59b6;
+}
+
+.popout-box.fluid textarea {
+  font-family: roboto, helvetica, arial, tahoma, verdana;
+  border: 1px solid #efefed;
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+  margin-bottom: 15px;
+  min-height: 150px;
+  min-width: calc(400px - 40px);
+}
+
+.popout-box.fluid textarea:focus,
+.popout-box.fluid textarea:active {
+  border-color: #9b59b6;
+  color: #000;
+}
+
+.popout-box.fluid button.standardBtn {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+  margin-bottom: 0;
+}
+
+.popout-box.fluid button.standardBtn ~ a {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #9b59b6;
+  text-decoration: none;
+}
+
+.popout-box.centered {
+  text-align: center;
+}
+
+.popout-box.centered button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.popout-box.reporting {
+  font-size: 0;
+  max-width: 400px;
+}
+
+.popout-box.reporting select {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 95px);
+  max-width: calc(100% - 95px);
+  height: 35px;
+  line-height: 35px;
+  padding: 0 10px;
+  margin: 0;
+  border: 1px solid #efefed;
+  border-right: none;
+}
+
+.popout-box.reporting button {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  width: 95px;
+  text-align: center;
+  margin: 0;
+}
+
+.popout-box p {
+  margin-bottom: 15px;
+  line-height: 18px;
+}
+
+.popout-box:after {
+  display: block;
+  width: 100%;
+  height: 25px;
+  content: "";
+}
+
+.popout-box > pre {
+  border-color: #333;
+  color: #333;
+}
+
+.popout-box > .heading {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #000;
+  font-family: roboto, verdana, helvetica, arial, tahoma;
+  text-align: center;
+}
+
+.popout-box > .field {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.popout-box > .field > label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.popout-box > .field > select,
+.popout-box > .field > input[type="text"],
+.popout-box > .field > input[type="number"],
+.popout-box > .field > textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid #efefed;
+  padding: 0 10px;
+  line-height: 40px;
+  height: 40px;
+  font-size: 14px;
+  font-family: roboto, helvetica, arial, tahoma, verdana;
+}
+
+.popout-box > .field > select:focus,
+.popout-box > .field > select:active,
+.popout-box > .field > input[type="text"]:focus,
+.popout-box > .field > input[type="text"]:active,
+.popout-box > .field > input[type="number"]:focus,
+.popout-box > .field > input[type="number"]:active,
+.popout-box > .field > textarea:focus,
+.popout-box > .field > textarea:active {
+  border-color: #9b59b6;
+}
+
+.popout-box > .field > textarea {
+  line-height: 20px;
+  height: 150px;
+  padding: 10px;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 150px;
+}
+
+.popout-box.crosspost label {
+  font-weight: bold;
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  width: 100%;
+  text-align: left;
+}
+
+.popout-box.crosspost input[type="text"] {
+  display: block;
+  width: 100%;
+  padding: 0 10px;
+  line-height: 40px;
+  height: 40px;
+  font-size: 14px;
+  color: #000;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.popout-box.crosspost input[type="text"]:focus {
+  border-color: #9b59b6;
+}
+
+.popout-box.discover > input[type="text"] {
+  display: block;
+  width: 100%;
+  padding: 0 10px;
+  line-height: 40px;
+  height: 40px;
+  font-size: 14px;
+  color: #000;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.popout-box.discover > input[type="text"]:focus {
+  border-color: #9b59b6;
+}
+
+.popout-box.rules-popout .rule-output {
+  max-width: 600px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #efefef;
+  font-size: 16px;
+  margin: 10px auto;
+  height: 300px;
+  overflow-y: auto;
+}

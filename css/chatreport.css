@@ -1,0 +1,147 @@
+.chatReportList {
+  display: block;
+  width: 100%;
+}
+
+.chatReportList > .standardBtn {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.chatReportList > .standardBtn > span {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 50%;
+  margin: -9px auto 0;
+  left: 0;
+  right: 0;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.chatReportList > .standardBtn > span:before {
+  width: 18px;
+  height: 18px;
+  border-left: 2px solid #fff;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid transparent;
+  border-right: 2px solid transparent;
+  content: "";
+  border-radius: 100%;
+  display: block;
+  animation: rotating 0.75s linear infinite;
+}
+
+.chatReportList > .standardBtn:active,
+.chatReportList > .standardBtn:focus {
+  animation: hidetext 0.5s linear forwards;
+  animation-delay: 0s;
+}
+
+.chatReportList > .standardBtn:active > span,
+.chatReportList > .standardBtn:focus > span {
+  animation: displayreload 0.5s linear forwards;
+  animation-delay: 0s;
+}
+
+.chatReportList > .list {
+  display: block;
+  width: 100%;
+}
+
+.chatReportList > .list > .report {
+  display: block;
+  width: 100%;
+  font-size: 0;
+  background: #fff;
+  padding: 5px 10px;
+}
+
+.chatReportList > .list > .report:nth-child(even) {
+  background: #efefef;
+}
+
+.chatReportList > .list > .report .left {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 100px);
+  padding-right: 5px;
+}
+
+.chatReportList > .list > .report .left > .username {
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(100% - 100px);
+  margin-bottom: 5px;
+}
+
+.chatReportList > .list > .report .left > .message {
+  display: block;
+  padding: 5px;
+  border: 1px solid #e74c3c;
+  color: #000;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+.chatReportList > .list > .report > .right {
+  display: inline-block;
+  vertical-align: top;
+  width: 100px;
+}
+
+.chatReportList > .list > .report > .right > .standardBtn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100px;
+  position: relative;
+  margin: 0 0 5px;
+}
+
+.chatReportList > .list > .report > .right > .standardBtn > span {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 50%;
+  margin: -9px auto 0;
+  left: 0;
+  right: 0;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.chatReportList > .list > .report > .right > .standardBtn > span:before {
+  width: 18px;
+  height: 18px;
+  border-left: 2px solid #fff;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid transparent;
+  border-right: 2px solid transparent;
+  content: "";
+  border-radius: 100%;
+  display: block;
+  animation: rotating 0.75s linear infinite;
+}
+
+.chatReportList > .list > .report > .right > .standardBtn:active,
+.chatReportList > .list > .report > .right > .standardBtn:focus {
+  animation: hidetext 0.5s linear forwards;
+  animation-delay: 0s;
+}
+
+.chatReportList > .list > .report > .right > .standardBtn:active > span,
+.chatReportList > .list > .report > .right > .standardBtn:focus > span {
+  animation: displayreload 0.5s linear forwards;
+  animation-delay: 0s;
+}
+
+.chatReportList > .list > .report > .right > .standardBtn:last-child {
+  margin-bottom: 0;
+}

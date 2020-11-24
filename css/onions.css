@@ -1,0 +1,331 @@
+.onions-page {
+  display: block;
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 30px 20px;
+}
+
+.onions-page > .p-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #000;
+  text-align: center;
+}
+
+.onions-page > .p-body {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.onions-page > .list {
+  width: 100%;
+  font-size: 0;
+}
+
+.onions-page > .list > .item {
+  padding: 15px;
+  font-size: 0;
+}
+
+.onions-page > .list > .item > .left {
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(100% - 200px);
+}
+
+.onions-page > .list > .item > .left > .icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+  border: 1px solid #efefed;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.onions-page > .list > .item > .left > .text {
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(100% - 75px);
+}
+
+.onions-page > .list > .item > .left > .text > .title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.onions-page > .list > .item > .left > .text > .title > a {
+  color: #9b59b6;
+  text-decoration: none;
+}
+
+.onions-page > .list > .item > .right {
+  text-align: right;
+  display: inline-block;
+  vertical-align: middle;
+  width: 200px;
+}
+
+.onions-page > .list > .item > .right > .data {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  width: 70px;
+}
+
+.onions-page > .list > .item > .right > .data > .label {
+  font-size: 12px;
+  color: #999;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.onions-page > .list > .item > .right > .data > .value {
+  font-size: 26px;
+  color: #000;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+}
+
+.onions-page > .list > .item > .right > .data > .value.red {
+  color: #e74c3c;
+}
+
+.onions-page > .list > .item > .right > .data > .value.green {
+  color: #2ecc71;
+}
+
+.onions-page > .list > .item > .right > .data > .value.amber {
+  color: #e67e22;
+}
+
+.onions-page > .list > .item:nth-child(odd) {
+  background: #fff;
+}
+
+.onions-view {
+  display: block;
+  width: 100%;
+}
+
+.onions-view > .banner-top {
+  display: block;
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.onions-view > .banner-top:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background: #000;
+  content: "";
+  z-index: 1;
+}
+
+.onions-view > .banner-top > a {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #000;
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  z-index: 2;
+  padding: 0 20px;
+}
+
+.onions-view > .header-bar {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.onions-view > .header-bar > .inner {
+  max-width: 1400px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.onions-view > .header-bar > .inner > .left {
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(100% - 200px);
+}
+
+.onions-view > .header-bar > .inner > .left > .icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
+  border: 1px solid #efefed;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.onions-view > .header-bar > .inner > .left > .text {
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(100% - 95px);
+}
+
+.onions-view > .header-bar > .inner > .left > .text > .title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.onions-view > .header-bar > .inner > .left > .text > .title > a {
+  color: #9b59b6;
+  text-decoration: none;
+}
+
+.onions-view > .header-bar > .inner > .right {
+  text-align: right;
+  display: inline-block;
+  vertical-align: middle;
+  width: 200px;
+}
+
+.onions-view > .header-bar > .inner > .right > .data {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  width: 70px;
+}
+
+.onions-view > .header-bar > .inner > .right > .data > .label {
+  font-size: 12px;
+  color: #999;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.onions-view > .header-bar > .inner > .right > .data > .value {
+  font-size: 26px;
+  color: #000;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+}
+
+.onions-view > .header-bar > .inner > .right > .data > .value.red {
+  color: #e74c3c;
+}
+
+.onions-view > .header-bar > .inner > .right > .data > .value.green {
+  color: #2ecc71;
+}
+
+.onions-view > .header-bar > .inner > .right > .data > .value.amber {
+  color: #e67e22;
+}
+
+.onions-view > .columns {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  font-size: 0;
+}
+
+.onions-view > .columns > .item {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(50% - 10px);
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background: #fff;
+}
+
+.onions-view > .columns > .item:nth-child(even) {
+  margin-right: 0;
+}
+
+@media (max-width: 700px) {
+  .onions-view > .columns > .item {
+    display: block;
+    width: 100%;
+    margin: 0 0 10px 0 !important;
+  }
+}
+
+.onions-view > .columns > .item > .title {
+  height: 40px;
+  line-height: 40px;
+  color: #9b59b6;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 15px;
+  border-bottom: 1px solid #efefed;
+}
+
+.onions-view > .columns > .item > .data {
+  padding: 10px 15px;
+  font-size: 14px;
+  border-bottom: 1px solid #efefed;
+}
+
+.onions-view > .columns > .item > .data a {
+  text-decoration: none;
+}
+
+.onions-view > .columns > .item > .data:last-child {
+  border: none;
+}
+
+.onions-view > .columns > .item > .data > .label {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 5px;
+}
+
+.onions-view > .columns > .item > .data > .value {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.onions-view > .columns > .item > .mirrors {
+  display: block;
+  width: 100%;
+}
+
+.onions-view > .columns > .item > .mirrors > .element {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  border-bottom: 1px solid #efefed;
+  overflow: hidden;
+}
+
+.onions-view > .columns > .item > .mirrors > .element > .url {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+}
+
+.onions-view > .columns > .item > .mirrors > .element > .url > a {
+  color: #9b59b6;
+  text-decoration: none;
+  font-size: 16px;
+}

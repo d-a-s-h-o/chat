@@ -1,0 +1,16 @@
+.tip{ background-color: var(--tip); border: 1px; padding: 3px; padding-left: 10px; padding-right: 10px;  }
+
+.tip p{ color: white; margin-top: 0; margin-bottom: 0;}
+
+.tip ul{color: white;}
+
+.tip a:link{
+    color: white;
+}
+.tip a:visited{
+    color: #B1A1C9;
+}
+.tip a:hover{
+    color: white;
+    text-decoration: none;
+}

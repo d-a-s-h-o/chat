@@ -1,0 +1,57 @@
+@media screen and (max-width: 700px){
+    .popupcbx{
+      width: 70%;
+    }
+  }
+
+  .overlaycbx {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.85);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlaycbx:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popupcbx {
+    margin: 70px auto;
+    padding: 20px;
+    background: var(--accent2);
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+  .popupcbx h3 {
+    margin-top: 0;
+    color: var(--accent);
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 20px;
+  }
+  .popupcbx .closecbx {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+  }
+  .popupcbx .closecbx:hover {
+    color: var(--accent);
+  }
+  .popupcbx .contentcbx {
+    max-height: 30%;
+    overflow: auto;
+    color: #fff;
+    font-family: Tahoma, Arial, sans-serif !important;
+  }

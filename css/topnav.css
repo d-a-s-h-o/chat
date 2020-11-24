@@ -1,0 +1,120 @@
+.topnav {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+  height: 50px; /* Full width */
+  background-color: var(--nav-bg);
+}
+.topnav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 998;
+}
+
+.topnav ul li {
+  display: block;
+  position: relative;
+  float: left;
+}
+
+/* This hides the dropdowns */
+
+.topnav li ul {
+  display: none;
+}
+
+.topnav ul li a {
+  display: block;
+  padding: 0.8em;
+  text-decoration: none;
+  white-space: nowrap;
+  color: var(--accent);
+  overflow-y: auto;
+}
+
+.topnav ul li a:hover {
+  color: var(--accent2);
+  background: var(--accent);
+}
+
+/* Display the dropdown */
+
+.topnav li:hover > ul {
+  display: block;
+  position: absolute;
+}
+
+.topnav li:hover li {
+  float: none;
+}
+
+.topnav li:hover a {
+  color: black;
+  background: #f9f9f9;
+}
+
+.topnav li:hover li a:hover {
+  color: black;
+  background: #ddd;
+}
+
+.topnav li ul li {
+  border-top: 0;
+}
+
+/* Displays second level dropdowns to the right of the first level dropdown */
+
+.topnav ul ul ul {
+  left: 100%;
+  top: 0;
+  overflow-y: auto;
+}
+
+/* Simple clearfix */
+
+.topnav ul:before,
+.topnav ul:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.topnav ul:after {
+  clear: both;
+}
+.parent li {
+  margin: 0px -3px;
+  padding: 0px;
+}
+
+.parent ul {
+  max-height: 500px;
+  min-width: 460px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 0px -3px;
+  padding: 0px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.scrollable li {
+  height: auto;
+}
+
+.navbartitle {
+  margin: 0 auto;
+  height: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.8em;
+  text-align: center;
+  text-shadow: 0 0 0 #faf7fc;
+  text-decoration: none;
+  color: #faf7fc;
+  font-size: 1rem;
+  line-height: 1.5;
+  position: fixed;
+  z-index: 999;
+  top: 0px;
+}

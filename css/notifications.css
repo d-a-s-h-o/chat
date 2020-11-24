@@ -1,0 +1,85 @@
+.notificationBoard {
+  display: block;
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 0;
+}
+
+.notificationBoard > .inner {
+  padding: 20px;
+  background: #fff;
+}
+
+.notificationBoard > .inner > .heading {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.notificationBoard > .inner > .actionbar {
+  display: block;
+  padding-bottom: 10px;
+}
+
+.notificationBoard .list {
+  display: block;
+  width: 100%;
+  border-top: 1px solid #efefed;
+}
+
+.notificationBoard .list > .item {
+  display: block;
+  padding: 15px 20px;
+  border-bottom: 1px solid #efefed;
+  background: #fff;
+}
+
+.notificationBoard .list > .item > .text {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  width: calc(100% - 55px);
+}
+
+.notificationBoard .list > .item > .text > .title {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #9b59b6;
+  margin-bottom: 5px;
+}
+
+.notificationBoard .list > .item > .text > .body {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.notificationBoard .list > .item > .text > .body a {
+  text-decoration: none;
+}
+
+.notificationBoard .list > .item > .text > .timestamp {
+  color: #999;
+  font-size: 12px;
+}
+
+.notificationBoard .list > .item.read {
+  background: none;
+  opacity: 0.75;
+}
+
+.notificationBoard .list > .item.read > .text > .title {
+  font-weight: normal;
+}
+
+.notificationBoard .list > .item.read > .icon {
+  opacity: 0;
+}
+
+.notificationBoard .list > .item:last-child {
+  border: none;
+}
+
+.notificationBoard .display_alerts {
+  margin: 0;
+}

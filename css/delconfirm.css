@@ -1,0 +1,5 @@
+.del_confirm {
+    background-color: var(--accent2);
+    color: var(--accent);
+    font-family: Arial, Helvetica, sans-serif;
+}

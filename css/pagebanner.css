@@ -1,0 +1,19 @@
+.page-banner {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 60px 20px;
+  text-align: center;
+  background: #34495e;
+}
+
+.page-banner .logo {
+  max-width: 250px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.page-banner .logo > img {
+  display: block;
+  width: 100%;
+}

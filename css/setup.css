@@ -1,0 +1,978 @@
+a.setup-author-output {
+  padding: 0 10px;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 3px;
+  height: 30px;
+  line-height: 30px;
+  text-decoration: none;
+  background: #9b59b6;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.setup-content-output {
+  padding: 15px;
+  font-size: 16px;
+  background: #fff;
+  margin-bottom: 10px;
+}
+
+.setup-ad-image {
+  display: inline-block;
+  vertical-align: middle;
+  width: 300px;
+  margin: 10px auto;
+}
+
+.setup-ad-image > .im {
+  width: 100%;
+  padding-bottom: 25%;
+  background-size: cover;
+  background-position: center center;
+  margin: 0 auto;
+}
+
+.setup-panel {
+  display: block;
+  width: 100%;
+  height: calc(100vh - 60px);
+  position: relative;
+  padding: 20px 0;
+}
+
+.setup-panel > nav.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  background: #323a44;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.setup-panel > nav.menu > ul {
+  display: block;
+  width: 100%;
+  list-style: none;
+}
+
+.setup-panel > nav.menu > ul > li {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #222;
+}
+
+.setup-panel > nav.menu > ul > li:last-child {
+  border-bottom: 0;
+}
+
+.setup-panel > nav.menu > ul > li > a {
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #fff;
+  padding: 0 15px;
+  font-size: 16px;
+}
+
+.setup-panel > .panel-content {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(100% - 250px);
+  height: calc(100vh - 60px);
+  background: #efefed;
+  padding: 20px 20px 0 20px;
+  overflow-y: auto;
+}
+
+.setup-panel > .panel-content:after {
+  content: "";
+  height: 20px;
+  display: block;
+  width: 100%;
+}
+
+.setup-panel > .panel-content > p {
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 15px;
+}
+
+.setup-panel > .panel-content > .notes > .note {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  padding: 15px;
+  margin-bottom: 5px;
+  background: #fff;
+}
+
+.setup-panel > .panel-content > .notes > .note > .username {
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.setup-panel > .panel-content > .notes > .note > .timestamp {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.setup-panel > .panel-content > .notes > .note > .msg {
+  font-size: 16px;
+  color: #000;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+
+.setup-panel > .panel-content > .notes > .note:last-child {
+  margin-bottom: 0;
+}
+
+.setup-panel > .panel-content .panel-bulk {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  background: #323a44;
+  color: #fff;
+  padding: 15px;
+}
+
+.setup-panel > .panel-content .panel-bulk > .title {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.setup-panel > .panel-content .panel-bulk > p {
+  margin-bottom: 10px;
+}
+
+.setup-panel > .panel-content .vote-list {
+  display: block;
+  width: 100%;
+  font-size: 0;
+}
+
+.setup-panel > .panel-content .vote-list > .item {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  padding: 15px 15px 15px 35px;
+  position: relative;
+  color: #fff;
+  font-size: 16px;
+}
+
+.setup-panel > .panel-content .vote-list > .item:before {
+  width: 16px;
+  height: 16px;
+  left: 10px;
+  top: 50%;
+  margin-top: -9px;
+  content: "";
+  font-size: 16px;
+  color: #fff;
+  position: absolute;
+}
+
+.setup-panel > .panel-content .vote-list > .item.up {
+  background: #2ecc71;
+}
+
+.setup-panel > .panel-content .vote-list > .item.down {
+  background: #e74c3c;
+}
+
+.setup-panel > .panel-content .vote-list > .item.up:before {
+  content: "▲";
+}
+
+.setup-panel > .panel-content .vote-list > .item.down:before {
+  content: "▼";
+}
+
+.setup-panel > .panel-content .vote-list > .item > a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.setup-panel > .panel-content .panel-list {
+  display: block;
+  width: 100%;
+}
+
+.setup-panel > .panel-content .panel-list.posts > .item > .details {
+  padding-left: 15px !important;
+}
+
+.setup-panel > .panel-content .panel-list.subdreads > .item {
+  min-height: 80px;
+}
+
+.setup-panel > .panel-content .panel-list.subdreads > .item > .details {
+  padding-left: 70px !important;
+}
+
+.setup-panel > .panel-content .panel-list.ads > .item > .image {
+  display: inline-block;
+  vertical-align: middle;
+  width: 250px;
+  margin-right: 15px;
+}
+
+.setup-panel > .panel-content .panel-list.ads > .item > .image > .im {
+  width: 100%;
+  padding-bottom: 25%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.setup-panel > .panel-content .panel-list.ads > .item > .details {
+  padding-left: 0;
+  width: calc(100% - 415px);
+  padding-right: 15px;
+  vertical-align: middle;
+}
+
+.setup-panel > .panel-content .panel-list.ads > .item > .details > .post-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.setup-panel
+  > .panel-content
+  .panel-list.ads
+  > .item
+  > .details
+  > .info
+  > span {
+  display: inline-block;
+}
+
+.setup-panel > .panel-content .panel-list > .item {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  background: #fff;
+  font-size: 0;
+  position: relative;
+  margin-bottom: 1px;
+}
+
+.setup-panel > .panel-content .panel-list > .item:nth-child(even) {
+  background: #efefef;
+}
+
+.setup-panel > .panel-content .panel-list > .item > input[type="checkbox"] {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: -10px 0 0;
+  z-index: 999;
+}
+
+.setup-panel > .panel-content .panel-list > .item > .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.setup-panel
+  > .panel-content
+  .panel-list
+  > .item
+  > input[type="checkbox"]:checked
+  ~ .bg {
+  background: #9b59b6;
+}
+
+.setup-panel
+  > .panel-content
+  .panel-list
+  > .item
+  > input[type="checkbox"]:checked
+  ~ .details {
+  color: #fff;
+}
+
+.setup-panel
+  > .panel-content
+  .panel-list
+  > .item
+  > input[type="checkbox"]:checked
+  ~ .details
+  > a.username {
+  color: #fff;
+}
+
+.setup-panel
+  > .panel-content
+  .panel-list
+  > .item
+  > input[type="checkbox"]:checked
+  ~ .actions
+  > a.none {
+  border: 1px solid #fff;
+}
+
+.setup-panel > .panel-content .panel-list > .item > .details {
+  position: relative;
+  z-index: 5;
+  padding-left: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(100% - 150px);
+  font-size: 14px;
+}
+
+.setup-panel > .panel-content .panel-list > .item > .details > .post-title {
+  text-decoration: none;
+  font-size: 22px;
+  color: #000;
+}
+
+.setup-panel > .panel-content .panel-list > .item > .details > .username {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.setup-panel
+  > .panel-content
+  .panel-list
+  > .item
+  > .details
+  > .username
+  > .flair {
+  background-color: #efefef;
+  display: inline-block;
+  font-size: 12px;
+  padding: 0;
+  vertical-align: middle;
+  margin-left: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-weight: normal;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.setup-panel > .panel-content .panel-list > .item > .details > .info {
+  margin-top: 10px;
+}
+
+.setup-panel > .panel-content .panel-list > .item > .details > .info > span {
+  display: block;
+  margin-top: 5px;
+}
+
+.setup-panel > .panel-content .panel-list > .item > .actions {
+  position: relative;
+  z-index: 5;
+  display: inline-block;
+  vertical-align: middle;
+  width: 150px;
+}
+
+.setup-panel > .panel-content .panel-list > .item > .actions > button,
+.setup-panel > .panel-content .panel-list > .item > .actions > a {
+  display: block;
+  width: 100%;
+}
+
+.setup-panel > .panel-content > .quick-forms > form.quick-tool {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% / 3 - (20px / 3));
+  padding: 15px;
+  background: #fff;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.setup-panel > .panel-content > .quick-forms > form.quick-tool > .t {
+  font-size: 16px;
+  font-weight: bold;
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+.setup-panel > .panel-content > .quick-forms > form.quick-tool > label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.setup-panel
+  > .panel-content
+  > .quick-forms
+  > form.quick-tool
+  input[type="text"],
+.setup-panel
+  > .panel-content
+  > .quick-forms
+  > form.quick-tool
+  input[type="number"] {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 15px;
+  height: 40px;
+  line-height: 40px;
+  color: #000;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  font-family: roboto, helvetica, sans-serif, arial, verdana, tahoma;
+}
+
+.setup-panel
+  > .panel-content
+  > .quick-forms
+  > form.quick-tool
+  input[type="text"]:focus,
+.setup-panel
+  > .panel-content
+  > .quick-forms
+  > form.quick-tool
+  input[type="text"]:active,
+.setup-panel
+  > .panel-content
+  > .quick-forms
+  > form.quick-tool
+  input[type="number"]:focus,
+.setup-panel
+  > .panel-content
+  > .quick-forms
+  > form.quick-tool
+  input[type="number"]:active {
+  border-color: #3498db;
+}
+
+.setup-panel > .panel-content > .quick-forms > form.quick-tool textarea {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  resize: vertical;
+  outline: 0;
+  border: 1px solid #ccc;
+  line-height: 16px;
+  font-size: 14px;
+  color: #000;
+  padding: 10px 15px;
+  min-height: 150px;
+  margin-bottom: 10px;
+  font-family: roboto, helvetica, sans-serif, arial, verdana, tahoma;
+}
+
+.setup-panel > .panel-content > .quick-forms > form.quick-tool textarea:focus,
+.setup-panel > .panel-content > .quick-forms > form.quick-tool textarea:active {
+  border-color: #3498db;
+}
+
+.setup-panel
+  > .panel-content
+  > .quick-forms
+  > form.quick-tool:nth-child(3n + 3) {
+  margin-right: 0;
+}
+
+.setup-panel > .panel-content > .quick-forms > form.quick-tool.lg {
+  margin-right: 0;
+  width: 100%;
+}
+
+.setup {
+  background-color: var(--lv3-col);
+}
+
+.setup h2 {
+  color: var(--accent);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.setup table tr td table {
+  padding: 0.5em 0.5em;
+  background-color: var(--lv2-col);
+  border: solid var(--lv3-col);
+}
+
+.setup table tr td table th,
+.setup table tr td table tr td th {
+  padding: unset;
+  color: var(--accent);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.setup table tr td table td form {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.setup table tr td hr {
+  padding: unset;
+  color: var(--accent);
+}
+
+.setup input[value="View"] {
+  background-color: var(--accent2);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ddd;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--button-text-col);
+  transition: background-color, color, 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.setup input[value="View"]:hover {
+  background-color: var(--accent);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ffffff;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--accent2);
+}
+
+.setup table tr td table tr td input[type="password"],
+.setup table tr td table tr td textarea[type="password"] {
+  background-color: var(--lv2-col);
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  text-align: left;
+  max-width: 100%;
+  padding: 0.3em;
+}
+
+.setup table tr td table tr td input[type="text"],
+.setup table tr td table tr td textarea[type="text"] {
+  background-color: var(--lv2-col);
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  text-align: left;
+  max-width: 100%;
+  padding: 0.3em;
+}
+
+.setup table tr td table tr td table {
+  border: none !important;
+}
+
+.setup table tr td table tr td select[name="ignore"] {
+  background-color: var(--accent2);
+  color: var(--button-text-col);
+  padding: 0.3em;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}
+
+.setup table tr td table tr td select[name="ignore"]:hover {
+  padding: 0.3em;
+  text-align: left;
+  color: var(--accent);
+  background-color: var(--lv2-col);
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}
+
+.setup table tr td table tr td input[type="number"] {
+  background-color: var(--accent2);
+  color: var(--button-text-col);
+  padding: 0.3em;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}
+
+.setup table tr td table tr td input[type="number"]:hover {
+  padding: 0.3em;
+  text-align: left;
+  color: var(--accent);
+  background-color: var(--lv2-col);
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}
+
+.setup table tr td table tr td input[type="color"] {
+  background-color: var(--accent2);
+  color: var(--button-text-col);
+  padding: 0.3em;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}
+
+.setup table tr td table tr td input[type="color"]:hover {
+  padding: 0.3em;
+  text-align: left;
+  color: var(--accent);
+  background-color: var(--lv2-col);
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}
+
+.setup table tr td table tr td select[name="font"] {
+  background-color: var(--accent2);
+  color: var(--button-text-col);
+  padding: 0.3em;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}
+
+.setup table tr td table tr td select[name="font"]:hover {
+  padding: 0.3em;
+  text-align: left;
+  color: var(--accent);
+  background-color: var(--lv2-col);
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}
+
+.setup table tr td table tr td select[name="eninbox"] {
+  background-color: var(--accent2);
+  color: var(--button-text-col);
+  padding: 0.3em;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}
+
+.setup table tr td table tr td select[name="eninbox"]:hover {
+  padding: 0.3em;
+  text-align: left;
+  color: var(--accent);
+  background-color: var(--lv2-col);
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}
+
+.setup select {
+  background-color: var(--accent2);
+  color: var(--button-text-col);
+  padding: 0.3em;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}
+
+.setup select:hover {
+  padding: 0.3em;
+  text-align: left;
+  color: var(--accent);
+  background-color: var(--lv2-col);
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}
+
+.setup input[value="Save changes"] {
+  background-color: var(--accent2);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ddd;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--button-text-col);
+  transition: background-color, color, 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.setup input[value="Save changes"]:hover {
+  background-color: var(--accent);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ffffff;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--accent2);
+}
+
+.setup input[value="Register"] {
+  background-color: var(--accent2);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ddd;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--button-text-col);
+  transition: background-color, color, 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.setup input[value="Register"]:hover {
+  background-color: var(--accent);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ffffff;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--accent2);
+}
+
+.setup input[value="Change"] {
+  background-color: var(--accent2);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ddd;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--button-text-col);
+  transition: background-color, color, 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.setup input[value="Change"]:hover {
+  background-color: var(--accent);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ffffff;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--accent2);
+}
+
+.setup input[value="Kick"] {
+  background-color: var(--accent2);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ddd;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--button-text-col);
+  transition: background-color, color, 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.setup input[value="Kick"]:hover {
+  background-color: var(--accent);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ffffff;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--accent2);
+}
+
+.setup input[value="Logout"] {
+  background-color: var(--accent2);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ddd;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--button-text-col);
+  transition: background-color, color, 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.setup input[value="Logout"]:hover {
+  background-color: var(--accent);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ffffff;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--accent2);
+}
+
+.setup input[value="Create"] {
+  background-color: var(--accent2);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ddd;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--button-text-col);
+  transition: background-color, color, 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.setup input[value="Create"]:hover {
+  background-color: var(--accent);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ffffff;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--accent2);
+}
+
+.setup input[value="Delete"] {
+  background-color: var(--accent2);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ddd;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--button-text-col);
+  transition: background-color, color, 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.setup input[value="Delete"]:hover {
+  background-color: var(--accent);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ffffff;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--accent2);
+}
+
+.setup input[value="Reload"] {
+  background-color: var(--accent2);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ddd;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--button-text-col);
+  transition: background-color, color, 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.setup input[value="Reload"]:hover {
+  background-color: var(--accent);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ffffff;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--accent2);
+}
+
+.setup input[value="Apply"] {
+  background-color: var(--accent2);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ddd;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--button-text-col);
+  transition: background-color, color, 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.setup input[value="Apply"]:hover {
+  background-color: var(--accent);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ffffff;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--accent2);
+}
+
+.setup input[value="Backup and restore"] {
+  background-color: var(--accent2);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ddd;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--button-text-col);
+  transition: background-color, color, 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.setup input[value="Backup and restore"]:hover {
+  background-color: var(--accent);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ffffff;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--accent2);
+}
+
+.setup input[value="Go to the Setup-Page"] {
+  background-color: var(--accent2);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ddd;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--button-text-col);
+  transition: background-color, color, 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.setup input[value="Go to the Setup-Page"]:hover {
+  background-color: var(--accent);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ffffff;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--accent2);
+}
+
+
+p #changelang {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.setup table tr td table a {
+  color: white;
+  text-decoration: underline white dotted;
+}
+
+.setup  textarea {
+  background-color: var(--lv2-col);
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  text-align: left;
+  max-width: 100%;
+  padding: 0.3em;
+}
+
+.setup small {
+  font-family: Arial, Helvetica, sans-serif;
+}

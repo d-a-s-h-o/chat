@@ -1,0 +1,14 @@
+.scrollbox {
+  background-color: #f7f7f7;
+  width: 100%;
+  max-height: 500px;
+  overflow-y: auto;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: normal;
+  border: 1px;
+  padding: 0;
+  padding-bottom: 0;
+  padding-left: 10px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}

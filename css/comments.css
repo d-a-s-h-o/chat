@@ -1,0 +1,400 @@
+.addComments {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  padding: 0 10px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.addComments > .title {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.addComments > form.add-comment {
+  display: block;
+  width: 100%;
+}
+
+.addComments > form.add-comment > textarea {
+  display: block;
+  width: 100%;
+  min-height: 150px;
+  padding: 10px;
+  background: #fff;
+  font-family: roboto, helvetica, arial, tahoma, verdana;
+  max-width: 100%;
+  min-width: 100%;
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 10px;
+  line-height: 18px;
+  border: 1px solid #fff;
+}
+
+.addComments > form.add-comment > textarea:focus,
+.addComments > form.add-comment > textarea:active {
+  border-color: #9b59b6;
+}
+
+.addComments > form.add-comment > button[type="submit"] {
+  display: inline-block;
+  vertical-align: top;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 30px;
+  margin-bottom: 0;
+  margin-right: 15px;
+}
+
+.addComments > form.add-comment > a {
+  display: inline-block;
+  vertical-align: top;
+  height: 40px;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+.postComments {
+  display: block;
+  width: 100%;
+  padding: 0 10px;
+  margin-top: 20px;
+}
+
+.postComments > .comment {
+  margin-bottom: 5px;
+}
+
+.postComments .comment {
+  display: block;
+  width: 100%;
+  position: relative;
+  font-size: 0;
+  background: #fff;
+  padding: 10px;
+}
+
+.postComments .comment:target > .commentContent > .commentBody {
+  background-color: #ffffe0;
+  padding: 5px;
+}
+
+.postComments .comment > input[type="checkbox"] {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin: 0;
+  opacity: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.postComments .comment > .comment {
+  border-left: 1px dashed #999;
+  padding-top: 20px;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+.postComments .comment > .comment > input[type="checkbox"] {
+  top: 20px;
+}
+
+.postComments .comment > .toggle {
+  display: inline-block;
+  vertical-align: top;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+  background: #666;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.postComments .comment > .toggle:before {
+  content: "-";
+}
+
+.postComments .comment > input[type="checkbox"]:hover ~ .toggle {
+  background: #9b59b6;
+}
+
+.postComments .comment > input[type="checkbox"]:checked ~ .toggle:before {
+  content: "+";
+}
+
+.postComments
+  .comment
+  > input[type="checkbox"]:checked
+  ~ .commentContent
+  > .commentBody {
+  display: none;
+}
+
+.postComments
+  .comment
+  > input[type="checkbox"]:checked
+  ~ .commentContent
+  > .actions {
+  display: none;
+}
+
+.postComments .comment > input[type="checkbox"]:checked ~ .comment {
+  display: none;
+}
+
+.postComments .comment > form.voting {
+  display: inline-block;
+  vertical-align: top;
+  width: 30px;
+  margin-right: 5px;
+}
+
+.postComments .comment > form.voting > button:last-child,
+.postComments .comment > form.voting > a:last-child {
+  margin-bottom: 0;
+}
+
+.postComments .comment > .commentContent {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 60px);
+  font-size: 14px;
+}
+
+.postComments .comment > .commentContent > .top {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.postComments .comment > .commentContent > .top > .username {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  text-decoration: none;
+  color: #9b59b6;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.postComments .comment > .commentContent > .top > .username > .flair {
+  background-color: #efefef;
+  color: #000;
+  display: inline-block;
+  font-size: 12px;
+  padding: 0 5px;
+  vertical-align: middle;
+  margin-left: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-weight: normal;
+  line-height: 16px;
+}
+
+.postComments .comment > .commentContent > .top > .votes {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  color: #999;
+  margin-right: 5px;
+}
+
+.postComments .comment > .commentContent > .top > .timestamp {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  color: #999;
+}
+
+.postComments .comment > .commentContent > .commentBody {
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 5px 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  overflow-x: hidden;
+}
+
+.postComments .comment > .commentContent > .actions {
+  display: block;
+  vertical-align: top;
+  width: 100%;
+  font-size: 0;
+  position: relative;
+}
+
+.postComments .comment > .commentContent > .actions > a,
+.postComments .comment > .commentContent > .actions > button,
+.postComments .comment > .commentContent > .actions > div {
+  display: inline-block;
+  vertical-align: top;
+  color: #666;
+  font-size: 12px;
+  padding: 0;
+  outline: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0 15px 0 0;
+  line-height: 16px;
+  position: relative;
+}
+
+.postComments .comment > .commentContent > .actions > a:hover,
+.postComments .comment > .commentContent > .actions > button:hover,
+.postComments .comment > .commentContent > .actions > div:hover {
+  color: #9b59b6;
+}
+
+.postComments .comment > .commentContent > .actions > a.replyTxt,
+.postComments .comment > .commentContent > .actions > button.replyTxt,
+.postComments .comment > .commentContent > .actions > div.replyTxt {
+  width: 30px;
+  height: 16px;
+}
+
+.postComments .comment > .commentContent > .actions > a.approve,
+.postComments .comment > .commentContent > .actions > a.ignore,
+.postComments .comment > .commentContent > .actions > button.approve,
+.postComments .comment > .commentContent > .actions > button.ignore,
+.postComments .comment > .commentContent > .actions > div.approve,
+.postComments .comment > .commentContent > .actions > div.ignore {
+  height: 18px;
+  line-height: 18px;
+  padding: 0 5px;
+  background: #e74c3c;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.postComments .comment > .commentContent > .actions > a.approve,
+.postComments .comment > .commentContent > .actions > button.approve,
+.postComments .comment > .commentContent > .actions > div.approve {
+  background: #2ecc71;
+}
+
+.postComments
+  .comment
+  > .commentContent
+  > .actions
+  > input[type="checkbox"][name="toggleReply"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 16px;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.postComments
+  .comment
+  > .commentContent
+  > .actions
+  > input[type="checkbox"][name="toggleReply"]:hover
+  ~ .replyTxt {
+  color: #9b59b6;
+}
+
+.postComments
+  .comment
+  > .commentContent
+  > .actions
+  > input[type="checkbox"][name="toggleReply"]:checked
+  ~ .replyBox {
+  display: block;
+}
+
+.postComments .comment > .commentContent > .actions > .replyBox {
+  display: none;
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  background: #efefed;
+  cursor: initial;
+  color: #666;
+  position: relative;
+}
+
+.postComments .comment > .commentContent > .actions > .replyBox > textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-family: roboto, helvetica, arial, tahoma, verdana;
+  font-size: 14px;
+  color: #000;
+  line-height: 18px;
+  height: calc(38px * 2);
+  min-height: calc(38px * 2);
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 250px;
+  border: 1px solid #efefed;
+  margin-bottom: 10px;
+}
+
+.postComments
+  .comment
+  > .commentContent
+  > .actions
+  > .replyBox
+  > textarea:focus,
+.postComments
+  .comment
+  > .commentContent
+  > .actions
+  > .replyBox
+  > textarea:active {
+  border-color: #9b59b6;
+}
+
+.postComments .comment > .commentContent > .actions > .replyBox > a {
+  display: inline-block;
+  vertical-align: middle;
+  height: 30px;
+  line-height: 30px;
+  margin-left: 15px;
+  text-decoration: none;
+  color: #9b59b6;
+  font-size: 14px;
+}
+
+.postComments .comment > .commentContent > .actions > .replyBox > button {
+  margin-bottom: 0;
+}
+
+.postComments .comment > .commentContent > .actions > .replyBox:hover {
+  color: #666;
+}
+
+.postComments .comment > .commentContent > .actions > .replyBox:before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 5px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #efefed transparent;
+}

@@ -1,0 +1,638 @@
+@media only screen and (max-width: 556px) {
+  .popout-box.login {
+    height: 650px;
+  }
+
+  .decaptcha {
+    text-align: center;
+  }
+}
+
+.decaptcha {
+  width: 250px;
+  font-size: 0;
+  position: relative;
+}
+
+form.std > .decaptcha,
+.addComments > form.add-comment > .decaptcha {
+  margin: 0 0 10px !important;
+}
+
+form > .decaptcha {
+  margin: 0 auto 10px auto;
+}
+
+.decaptcha > .init-ui {
+  display: inline-block;
+  vertical-align: top;
+  width: 250px;
+  position: relative;
+  padding: 20px 10px 20px 50px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  height: 58px;
+}
+
+.decaptcha > .init-ui > .text {
+  font-size: 16px;
+  color: #000;
+  text-align: left;
+}
+
+.decaptcha > .init-ui > .check {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #888;
+  border-radius: 3px;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  margin-top: -15px;
+  background: #fff;
+  transition: border-color 0.5s ease-in-out;
+}
+
+.decaptcha > .init-ui > .check:before {
+  position: absolute;
+  top: 16px;
+  left: 3px;
+  width: 0;
+  height: 3px;
+  background: #9b59b6;
+  content: "";
+  transform: rotate(45deg);
+  opacity: 0;
+}
+
+@keyframes decaptcha-check-left {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+
+  to {
+    width: 8px;
+    opacity: 1;
+  }
+}
+
+.decaptcha > .init-ui > .check:after {
+  position: absolute;
+  top: 13px;
+  left: 6px;
+  width: 0;
+  height: 3px;
+  background: #9b59b6;
+  content: "";
+  transform: rotate(-45deg);
+  opacity: 0;
+}
+
+@keyframes decaptcha-check-right {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+
+  to {
+    width: 20px;
+    opacity: 1;
+  }
+}
+
+.decaptcha > .event {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 58px;
+  opacity: 0;
+  z-index: 10;
+}
+
+.decaptcha:hover > .init-ui > .check {
+  border-color: #333;
+}
+
+.decaptcha > .init-ui > .check > .spinner {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: -9px auto 0 auto;
+  border-radius: 100%;
+  border: 2px solid transparent;
+  border-left: 2px solid #666;
+  border-top: 2px solid #666;
+  animation: decaptcha-spinner 1s linear infinite;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+@-webkit-keyframes decaptcha-spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.decaptcha > .event:checked ~ .init-ui > .check > .spinner {
+  opacity: 1;
+}
+
+.decaptcha > .event:checked ~ .init-ui > .check {
+  border-color: #9b59b6;
+}
+
+.decaptcha > .decaptcha-ui {
+  position: absolute;
+  bottom: 63px;
+  left: 5px;
+  padding-top: 10px;
+  width: 240px;
+  background: #fff;
+  text-align: center;
+  height: 240px;
+  color: #000;
+  font-size: 16px;
+  border-radius: 3px;
+  border: 1px solid #666;
+  z-index: 15;
+}
+
+.decaptcha > .decaptcha-ui > .query {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+  height: 36px;
+}
+
+.decaptcha > .decaptcha-ui > .query > .riddle {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.decaptcha > .decaptcha-ui:after,
+.decaptcha > .decaptcha-ui:before {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 8px 0 8px;
+  border-color: #fff transparent transparent transparent;
+  top: 100%;
+  left: 12px;
+  content: "";
+}
+
+.decaptcha > .decaptcha-ui:before {
+  top: calc(100% + 2px);
+  border-color: #666 transparent transparent transparent;
+}
+
+.decaptcha > input[type="checkbox"][name^="captcha_answer"] {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #000;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  bottom: 248px;
+  left: 20px;
+  z-index: 20;
+  background: none;
+  opacity: 0;
+}
+
+.decaptcha > .captcha_thumb {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #000;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  bottom: 248px;
+  left: 15px;
+  z-index: 15;
+  border-radius: 100%;
+  transition: transform 0.5s ease-in-out, border-color 0.5s ease-in-out;
+  overflow: hidden;
+  background-size: 200px auto;
+}
+
+.decaptcha > .captcha_thumb > .dull {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: #000;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.decaptcha > .captcha_thumb:before {
+  position: absolute;
+  top: 26px;
+  left: 13px;
+  width: 0;
+  height: 3px;
+  background: #fff;
+  content: "";
+  transform: rotate(45deg);
+  opacity: 0;
+  z-index: 15;
+}
+
+.decaptcha > .captcha_thumb:after {
+  position: absolute;
+  top: 23px;
+  left: 16px;
+  width: 0;
+  height: 3px;
+  background: #fff;
+  content: "";
+  transform: rotate(-45deg);
+  opacity: 0;
+  z-index: 15;
+}
+
+.decaptcha > .captcha_thumb_id_1 {
+  bottom: 198px;
+  left: 15px;
+  background-position: 0 0;
+}
+
+.decaptcha > .captcha_thumb_id_2 {
+  bottom: 198px;
+  left: 71px;
+  background-position: -50px 0;
+}
+
+.decaptcha > .captcha_thumb_id_3 {
+  bottom: 198px;
+  left: 126px;
+  background-position: -100px 0;
+}
+
+.decaptcha > .captcha_thumb_id_4 {
+  bottom: 198px;
+  left: 182px;
+  background-position: -150px 0;
+}
+
+.decaptcha > .captcha_thumb_id_5 {
+  bottom: 143px;
+  left: 15px;
+  background-position: 0 -50px;
+}
+
+.decaptcha > .captcha_thumb_id_6 {
+  bottom: 143px;
+  left: 71px;
+  background-position: -50px -50px;
+}
+
+.decaptcha > .captcha_thumb_id_7 {
+  bottom: 143px;
+  left: 126px;
+  background-position: -100px -50px;
+}
+
+.decaptcha > .captcha_thumb_id_8 {
+  bottom: 143px;
+  left: 182px;
+  background-position: -150px -50px;
+}
+
+.decaptcha > .captcha_thumb_id_9 {
+  bottom: 88px;
+  left: 15px;
+  background-position: 0 -100px;
+}
+
+.decaptcha > .captcha_thumb_id_10 {
+  bottom: 88px;
+  left: 71px;
+  background-position: -50px -100px;
+}
+
+.decaptcha > .captcha_thumb_id_11 {
+  bottom: 88px;
+  left: 126px;
+  background-position: -100px -100px;
+}
+
+.decaptcha > .captcha_thumb_id_12 {
+  bottom: 88px;
+  left: 182px;
+  background-position: -150px -100px;
+}
+
+.decaptcha > input[type="checkbox"][name="captcha_answer[1]"] {
+  bottom: 198px;
+  left: 15px;
+}
+
+.decaptcha > input[type="checkbox"][name="captcha_answer[2]"] {
+  bottom: 198px;
+  left: 71px;
+}
+
+.decaptcha > input[type="checkbox"][name="captcha_answer[3]"] {
+  bottom: 198px;
+  left: 126px;
+}
+
+.decaptcha > input[type="checkbox"][name="captcha_answer[4]"] {
+  bottom: 198px;
+  left: 182px;
+}
+
+.decaptcha > input[type="checkbox"][name="captcha_answer[5]"] {
+  bottom: 143px;
+  left: 15px;
+}
+
+.decaptcha > input[type="checkbox"][name="captcha_answer[6]"] {
+  bottom: 143px;
+  left: 71px;
+}
+
+.decaptcha > input[type="checkbox"][name="captcha_answer[7]"] {
+  bottom: 143px;
+  left: 126px;
+}
+
+.decaptcha > input[type="checkbox"][name="captcha_answer[8]"] {
+  bottom: 143px;
+  left: 182px;
+}
+
+.decaptcha > input[type="checkbox"][name="captcha_answer[9]"] {
+  bottom: 88px;
+  left: 15px;
+}
+
+.decaptcha > input[type="checkbox"][name="captcha_answer[10]"] {
+  bottom: 88px;
+  left: 71px;
+}
+
+.decaptcha > input[type="checkbox"][name="captcha_answer[11]"] {
+  bottom: 88px;
+  left: 126px;
+}
+
+.decaptcha > input[type="checkbox"][name="captcha_answer[12]"] {
+  bottom: 88px;
+  left: 182px;
+}
+
+.decaptcha > input[type="checkbox"][name^="captcha_answer"]:hover,
+.decaptcha
+  > input[type="checkbox"][name^="captcha_answer"]:hover
+  + .captcha_thumb {
+  transform: scale(1.4);
+}
+
+.decaptcha
+  > input[type="checkbox"][name^="captcha_answer"]:hover
+  + .captcha_thumb {
+  z-index: 16;
+}
+
+.decaptcha
+  > input[type="checkbox"][name^="captcha_answer"]:checked
+  + .captcha_thumb {
+  border-color: #9b59b6;
+}
+
+.decaptcha
+  > input[type="checkbox"][name^="captcha_answer"]:checked
+  + .captcha_thumb:before {
+  opacity: 1;
+}
+
+.decaptcha
+  > input[type="checkbox"][name^="captcha_answer"]:checked
+  + .captcha_thumb:after {
+  opacity: 1;
+}
+
+.decaptcha
+  > input[type="checkbox"][name^="captcha_answer"]:checked
+  + .captcha_thumb
+  > .dull {
+  opacity: 0.5;
+}
+
+.decaptcha
+  > input[type="checkbox"][name^="captcha_answer"]:checked
+  ~ .init-ui
+  > .check:before,
+.decaptcha
+  > input[type="checkbox"][name^="captcha_answer"]:checked
+  + .captcha_thumb:before {
+  animation: decaptcha-check-left 1s;
+  animation-fill-mode: forwards;
+}
+
+.decaptcha
+  > input[type="checkbox"][name^="captcha_answer"]:checked
+  ~ .init-ui
+  > .check:after,
+.decaptcha
+  > input[type="checkbox"][name^="captcha_answer"]:checked
+  + .captcha_thumb:after {
+  animation: decaptcha-check-right 1s;
+  animation-fill-mode: forwards;
+}
+
+.decaptcha > .decaptcha-ui,
+.decaptcha > input[type="checkbox"][name^="captcha_answer"],
+.decaptcha > .captcha_thumb {
+  display: none;
+}
+
+.decaptcha > .event:checked ~ .decaptcha-ui,
+.decaptcha > .event:checked ~ input[type="checkbox"][name^="captcha_answer"],
+.decaptcha > .event:checked ~ .captcha_thumb {
+  display: block;
+}
+
+.decaptcha
+  > input[type="checkbox"][name^="captcha_answer"]:checked
+  ~ .init-ui
+  > .check
+  > .spinner {
+  display: none;
+}
+
+.popout-box:not(.login) .decaptcha > .event:checked ~ .init-ui {
+  margin-top: 250px;
+}
+
+.popout-box.message-reply .decaptcha > .event:checked ~ .init-ui {
+  margin-top: 50px;
+}
+
+.cbdespinner {
+	position:relative;
+	width:2em;
+	height:2em;
+	display:flex;
+	margin:2em 1em;
+	align-items:center;
+	justify-content:center;
+}
+
+.cbdespinner input[type="checkbox"] { 
+  position: absolute; 
+  opacity: 0; 
+  z-index: -1;
+}
+
+.cbdespinner input[type="checkbox"]+.checkmark {
+	display:inline-block;
+	width:2em;
+	height:2em;
+	background-color:#fcfcfc;
+	border:2.5px solid #c3c3c3;
+	border-radius:3px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	cursor: pointer;
+}
+
+.cbdespinner input[type="checkbox"]+.checkmark span {
+	content:'';
+	position:relative;/*
+	position:absolute;
+	border-bottom:3px solid;
+	border-right:3px solid;
+	border-color:#029f56;*/
+	margin-top:-3px;
+	transform:rotate(45deg);
+	width:.75em;
+	height:1.2em;
+	opacity:0;
+}
+
+.cbdespinner input[type="checkbox"]+.checkmark>span:after {
+	content:'';
+	position:absolute;
+	display:block;
+	height:3px;
+	bottom:0;left:0;
+	background-color:#029f56;
+}
+
+.cbdespinner input[type="checkbox"]+.checkmark>span:before {
+	content:'';
+	position:absolute;
+	display:block;
+	width:3px;
+	bottom:0;right:0;
+	background-color:#029f56;
+}
+
+.cbdespinner input[type="checkbox"]:checked+.checkmark { 
+	animation:2s cbdespin forwards;
+}
+
+.cbdespinner input[type="checkbox"]:checked+.checkmark>span { 
+	animation:1s cbdefadein 1.9s forwards;
+}
+
+.cbdespinner input[type="checkbox"]:checked+.checkmark>span:after {animation:.3s cbdebottomslide 2s forwards;}
+.cbdespinner input[type="checkbox"]:checked+.checkmark>span:before {animation:.5s cbderightslide 2.2s forwards;}
+
+@keyframes cbdefadein {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+@keyframes cbdebottomslide {
+	0% {width:0;}
+	100% {width:100%;}
+}
+@keyframes cbderightslide {
+	0% {height:0;}
+	100% {height:100%;}
+}
+
+@keyframes cbdespin {
+	10% {
+		width:0;
+		height:0;
+		border-width:6px;
+	}
+	30% {
+		width:0;
+		height:0;
+		border-radius:50%;
+		border-width:1em;
+		transform: rotate(0deg);
+		border-color:rgb(199,218,245);
+	}
+	50% {
+		width:2em;
+		height:2em;
+		border-radius:50%;
+		border-width:4px;
+		border-color:rgb(199,218,245);
+		border-right-color:rgb(89,152,239);
+	}
+	70% {
+		border-width:4px;
+		border-color:rgb(199,218,245);
+		border-right-color:rgb(89,152,239);
+	}
+	90% {
+		border-width:4px;
+	}
+	100% {
+		width:2em;
+		height:2em;
+		border-radius:50%;
+		transform: rotate(720deg);
+		border-color:transparent;
+	}
+}
+::selection {
+	background-color:transparent;
+	color:teal;
+}
+::-moz-selection {
+	background-color:transparent;
+	color:teal;
+}
+
+/*
+<div class="cbdespinner">
+<label>
+  <input type="checkbox">
+  <span class="cbdecheckmark"><span>&nbsp;</span></span>
+</label>
+</div>
+ */

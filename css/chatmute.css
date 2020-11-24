@@ -1,0 +1,121 @@
+.chatMuteList {
+  display: block;
+  width: 100%;
+}
+
+.chatMuteList > .standardBtn {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.chatMuteList > .standardBtn > span {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 50%;
+  margin: -9px auto 0;
+  left: 0;
+  right: 0;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.chatMuteList > .standardBtn > span:before {
+  width: 18px;
+  height: 18px;
+  border-left: 2px solid #fff;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid transparent;
+  border-right: 2px solid transparent;
+  content: "";
+  border-radius: 100%;
+  display: block;
+  animation: rotating 0.75s linear infinite;
+}
+
+.chatMuteList > .standardBtn:active,
+.chatMuteList > .standardBtn:focus {
+  animation: hidetext 0.5s linear forwards;
+  animation-delay: 0s;
+}
+
+.chatMuteList > .standardBtn:active > span,
+.chatMuteList > .standardBtn:focus > span {
+  animation: displayreload 0.5s linear forwards;
+  animation-delay: 0s;
+}
+
+.chatMuteList > .list {
+  display: block;
+  width: 100%;
+}
+
+.chatMuteList > .list > .mute {
+  display: block;
+  width: 100%;
+  font-size: 0;
+  background: #fff;
+  padding: 5px 10px;
+}
+
+.chatMuteList > .list > .mute:nth-child(even) {
+  background: #efefef;
+}
+
+.chatMuteList > .list > .mute > .username {
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(100% - 100px);
+  padding-right: 10px;
+}
+
+.chatMuteList > .list > .mute > .standardBtn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100px;
+  margin: 0;
+  position: relative;
+}
+
+.chatMuteList > .list > .mute > .standardBtn > span {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 50%;
+  margin: -9px auto 0;
+  left: 0;
+  right: 0;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.chatMuteList > .list > .mute > .standardBtn > span:before {
+  width: 18px;
+  height: 18px;
+  border-left: 2px solid #fff;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid transparent;
+  border-right: 2px solid transparent;
+  content: "";
+  border-radius: 100%;
+  display: block;
+  animation: rotating 0.75s linear infinite;
+}
+
+.chatMuteList > .list > .mute > .standardBtn:active,
+.chatMuteList > .list > .mute > .standardBtn:focus {
+  animation: hidetext 0.5s linear forwards;
+  animation-delay: 0s;
+}
+
+.chatMuteList > .list > .mute > .standardBtn:active > span,
+.chatMuteList > .list > .mute > .standardBtn:focus > span {
+  animation: displayreload 0.5s linear forwards;
+  animation-delay: 0s;
+}

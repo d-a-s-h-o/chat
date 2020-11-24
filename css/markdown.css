@@ -1,0 +1,88 @@
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: xx-large;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+}
+
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+}
+
+h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+}
+
+h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+}
+
+pre {
+  font-family: monospace;
+  font-size: inherit;
+  overflow-x: auto;
+  white-space: pre-wrap; /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+}
+
+code {
+  font-family: monospace;
+  font-size: inherit;
+}
+
+code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier,
+    monospace;
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: inherit;
+}
+
+ul {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: inherit;
+}
+
+.kbd {
+  font-family: monospace;
+  white-space: pre;
+  color: #444;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.2em 0.5em 0.1em 0.5em;
+  margin: 0 0.1em;
+  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+  background-color: #f7f7f7;
+}
+
+
+.insb{
+  margin:0;
+  padding:0;
+  font-size:15px;
+  line-height:116%;
+  color:#121525;
+  font-weight:bolder;
+  }
+  
+  .ins{
+  font-size:15px;
+  line-height:116%;
+  color:#121525;
+  }

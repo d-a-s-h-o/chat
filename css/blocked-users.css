@@ -1,0 +1,57 @@
+.blocked-users {
+  display: block;
+  width: 100%;
+}
+
+.blocked-users > .item {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  color: #000;
+  font-size: 0;
+}
+
+.blocked-users > .item:nth-child(odd) {
+  background: #efefed;
+}
+
+.blocked-users > .item .left {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 20px;
+  width: calc(100% - 100px);
+}
+
+.blocked-users > .item .left > .username {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.blocked-users > .item .left > .timestamp {
+  font-size: 12px;
+  color: #999;
+}
+
+.blocked-users > .item .right {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100px;
+}
+
+.blocked-users > .item .right button {
+  display: block;
+  width: 100px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 35px;
+  line-height: 35px;
+  outline: 0;
+  border: none;
+  color: #fff;
+  background: #9b59b6;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+}

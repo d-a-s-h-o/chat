@@ -1,0 +1,77 @@
+.prevbox-beg {
+  position: fixed;
+  top: 48%;
+  left: 11%;
+}
+
+.prev-beg {
+  background-color: white;
+  color: #121525;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+.nextbox-end {
+  position: fixed;
+  top: 48%;
+  right: 11%;
+}
+
+.next-end {
+  background-color: white;
+  color: #121525;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+.prevbox {
+  position: fixed;
+  top: 48%;
+  left: 11%;
+}
+
+.nextbox {
+  position: fixed;
+  top: 48%;
+  right: 11%;
+}
+
+.prev {
+  background-color: #faf7fc;
+  color: #121525;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 8px -1px rgba(0, 0, 0, 0.19);
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+.next {
+  background-color: #faf7fc;
+  color: #121525;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 8px -1px rgba(0, 0, 0, 0.19);
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+.prev:hover {
+  background-color: #121525;
+  color: white;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 8px -1px rgba(0, 0, 0, 0.19);
+}
+
+.next:hover {
+  background-color: #121525;
+  color: white;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 8px -1px rgba(0, 0, 0, 0.19);
+}

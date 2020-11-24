@@ -1,0 +1,36 @@
+.display_alerts {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.display_alerts > .alert {
+  display: block;
+  width: 100%;
+  margin-bottom: 1px;
+  color: #fff;
+  background: #888;
+  padding: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.display_alerts > .alert a {
+  color: #fff !important;
+}
+
+.display_alerts > .alert.success {
+  background: #2ecc71;
+}
+
+.display_alerts > .alert.error {
+  background: #e74c3c;
+}
+
+.display_alerts > .alert.warning {
+  background: #f39c12;
+}
+
+.display_alerts > .alert.info {
+  background: #3498db;
+}

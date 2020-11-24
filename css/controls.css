@@ -1,0 +1,52 @@
+.controls {
+  background-color: var(--lv1-col) !important;
+  width: fit-content;
+}
+
+.ext-icon {
+  float: right;
+  display: inline-block !important;
+  background-color: unset !important;
+  vertical-align: middle;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.ext-icon:hover {
+  color: unset;
+  size: unset;
+  background-color: unset !important;
+  background: unset;
+}
+
+/* #exitbutton {
+  background-color: var(--red);
+  color: #ddd;
+}
+
+#exitbutton:hover {
+  background-color: var(--red-hover);
+}
+*/
+
+#onionbutton {
+  background-color: var(--onion);
+  color: #ddd;
+}
+
+#onionbutton:hover {
+  background-color: var(--onion-hover);
+}
+
+.controls .topnav {
+  background-color: unset;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: unset;
+}
+
+.controls input,
+.controls form {
+  background-color: unset;
+  padding: unset;
+  border: unset;
+}

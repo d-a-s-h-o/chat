@@ -1,0 +1,49 @@
+#chatters > * {
+  padding-left: 7px;
+  line-height: 20px;
+}
+
+#chatters > a {
+  display: block;
+}
+#chatters > span.group {
+  padding: 0.5em;
+  border-bottom: 1px solid var(--accent);
+  display: block;
+  margin-bottom: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#chatters .rank:hover {
+  margin-left: -20px;
+  margin-top: -25px;
+}
+
+.messages #chatters {
+  display: block;
+  float: right;
+  width: 20%;
+  overflow-y: auto;
+  position: fixed;
+  right: 0px;
+  max-height: 100%;
+  bottom: 2em;
+  top: 2em;
+  background-color: var(--lv1-col);
+}
+
+.messages #chatters td,
+#chatters tr,
+#chatters th {
+  display: table-row;
+  width: 100% !important;
+}
+
+.messages #chatters table a {
+  display: inline-block;
+  float: left;
+  margin-right: 5px;
+}
+
+.messages #chatters a {
+  text-decoration: none;
+}

@@ -1,0 +1,45 @@
+-------------------------------------------------------------------------
+Item                |Style (effect-parent)  |Colour (bg//fg)   |Code
+-------------------------------------------------------------------------
+
+Numbers:
+zero                |circle                 |orange//white     |0030
+zero                |rounded-square         |blue//white       |0030-20e3
+one                 |circle                 |orange//white     |0031
+one                 |rounded-square         |blue//white       |0031-20e3
+two                 |circle                 |orange//white     |0032
+two                 |rounded-square         |blue//white       |0032-20e3
+three               |circle                 |orange//white     |0033
+three               |rounded-square         |blue//white       |0033-20e3
+four                |circle                 |orange//white     |0034
+four                |rounded-square         |blue//white       |0034-20e3
+five                |circle                 |orange//white     |0035
+five                |rounded-square         |blue//white       |0035-20e3
+six                 |circle                 |orange//white     |0036
+six                 |rounded-square         |blue//white       |0036-20e3
+seven               |circle                 |orange//white     |0037
+seven               |rounded-square         |blue//white       |0037-20e3
+eight               |circle                 |orange//white     |0038
+eigth               |rounded-square         |blue//white       |0038-20e3
+nine                |circle                 |orange//white     |0039
+nine                |rounded-square         |blue//white       |0039-20e3
+
+Symbols:
+!! (double!)        |icon-transparent       |0//red            |203c
+x (times)           |icon-transparent       |0//red            |274c
+x (times)           |rounded-square         |green//white      |274e
+!? (big-question)   |icon-transparent       |0//red            |2049
+TM (trademark)      |icon-transparent       |0//black          |2122
+i (info)            |rounded-square         |blue//white       |2139
+tick (check) (yes)  |rounded-square         |blue//white       |2611
+tick (check) (yes)  |rounded-square         |green//white      |2705
+tick (check) (yes)  |icon-transparent       |0//black          |2714
+x (times)           |icon-transparent       |0//black          |2716
+? (question)        |icon-transparent       |0//red            |2753
+? (question)        |icon-transparent       |0//white          |2754
+! (exclaimation)    |icon-transparent       |0//white          |2755
+! (exclaimation)    |icon-transparent       |0//red            |2757
+(-) (denied) (no)   |circle                 |red//white        |26d4
+(!A) (warning) (no) |icon-transparent       |yellow//black     |26a0
+
+snowman (christmas) |icon-transparent       |0//white          |2603

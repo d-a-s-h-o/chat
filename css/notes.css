@@ -1,0 +1,154 @@
+.notes {
+  background-color: var(--lv3-col);
+}
+
+.notes h2 {
+  color: var(--accent);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.notes  textarea {
+  background-color: var(--lv2-col);
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  text-align: left;
+  max-width: 100%;
+  padding: 0.3em;
+}
+
+.notes small {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.notes input[value="Admin Notes"] {
+  background-color: var(--accent2);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ddd;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--button-text-col);
+  transition: background-color, color, 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.notes input[value="Admin Notes"]:hover {
+  background-color: var(--accent);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ffffff;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--accent2);
+}
+
+.notes input[value="Staff notes"] {
+  background-color: var(--accent2);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ddd;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--button-text-col);
+  transition: background-color, color, 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.notes input[value="Staff notes"]:hover {
+  background-color: var(--accent);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ffffff;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--accent2);
+}
+
+.notes input[value="Senior Member notes"] {
+  background-color: var(--accent2);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ddd;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--button-text-col);
+  transition: background-color, color, 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.notes input[value="Senior Member notes"]:hover {
+  background-color: var(--accent);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ffffff;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--accent2);
+}
+
+.notes input[value="Personal notes"] {
+  background-color: var(--accent2);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ddd;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--button-text-col);
+  transition: background-color, color, 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.notes input[value="Personal notes"]:hover {
+  background-color: var(--accent);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ffffff;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--accent2);
+}
+
+.notes input[value="Reload"] {
+  background-color: var(--accent2);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ddd;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--button-text-col);
+  transition: background-color, color, 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.notes input[value="Reload"]:hover {
+  background-color: var(--accent);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ffffff;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--accent2);
+}
+
+.notes input[value="Save Notes"] {
+  background-color: var(--accent2);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ddd;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--button-text-col);
+  transition: background-color, color, 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.notes input[value="Save Notes"]:hover {
+  background-color: var(--accent);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ffffff;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--accent2);
+}

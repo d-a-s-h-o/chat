@@ -1,0 +1,76 @@
+.destroy_chat,
+.backup {
+  background-color: var(--lv3-col);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.destroy_chat h2,
+.backup h2 {
+  color: var(--accent);
+}
+
+.destroy_chat input[value="Backup"],
+.backup input[value="Backup"] {
+  background-color: var(--accent2);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ddd;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--button-text-col);
+  transition: background-color, color, 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.destroy_chat input[value="Backup"]:hover,
+.backup input[value="Backup"]:hover {
+  background-color: var(--accent);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ffffff;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--accent2);
+}
+
+.destroy_chat input[value="Restore"],
+.backup input[value="Restore"] {
+  background-color: var(--accent2);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ddd;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--button-text-col);
+  transition: background-color, color, 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.destroy_chat input[value="Restore"]:hover,
+.backup input[value="Restore"]:hover {
+  background-color: var(--accent);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ffffff;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--accent2);
+}
+
+.destroy_chat input[type="text"],
+.destroy_chat textarea,
+.backup input[type="text"],
+.backup textarea {
+  background-color: var(--lv2-col);
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  text-align: left;
+  max-width: 100%;
+  padding: 0.3em;
+}
+
+.backup hr {
+  padding: unset !important;
+  color: var(--accent) !important;
+}

@@ -1,0 +1,273 @@
+.services-page {
+  display: block;
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 30px 20px;
+}
+
+.services-page > .p-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #000;
+  text-align: center;
+}
+
+.services-page > .grid {
+  width: 100%;
+  font-size: 0;
+}
+
+.services-page > .grid > .item {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% / 3 - (40px / 3));
+  margin-right: 20px;
+  background: #fff;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .services-page > .grid > .item {
+    width: calc(100% / 2 - (20px / 2));
+  }
+
+  .services-page > .grid > .item:nth-child(2) {
+    margin-right: 0;
+  }
+
+  .services-page > .grid > .item:nth-child(3) {
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .services-page > .grid > .item {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  .services-page > .grid > .item:nth-child(1) {
+    margin-top: 0;
+  }
+}
+
+.services-page > .grid > .item > .colorbar {
+  height: 80px;
+  width: 100%;
+  background: #9b59b6;
+}
+
+.services-page > .grid > .item:nth-child(3) {
+  margin-right: 0;
+}
+
+.services-page > .grid > .item > .text {
+  position: relative;
+  padding: 35px 15px 15px 15px;
+  font-size: 14px;
+}
+
+.services-page > .grid > .item > .text > a {
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  background-color: #9b59b6;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.services-page > .grid > .item > .text > .icon {
+  display: block;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -60px;
+  background: #9b59b6;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+
+.services-page > .grid > .item > .text > .icon > .image {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: -25px auto;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-animation: heartbeat 2s infinite;
+  -moz-animation: heartbeat 2s infinite;
+  animation: heartbeat 2s infinite;
+}
+
+.services-page > .grid > .item > .text > .title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.services-page > .grid > .item > .text > .short_description {
+  font-size: 12px;
+  color: #666;
+  line-height: 14px;
+  margin-bottom: 15px;
+}
+
+.services-page > .grid > .item > .text > .pricing > .small {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 5px;
+  text-transform: lowercase;
+}
+
+.services-page > .grid > .item > .text > .pricing > .price {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.services-view > .colorbar {
+  height: 80px;
+  width: 100%;
+  background: #9b59b6;
+  position: relative;
+}
+
+.services-view > .colorbar > a.back {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: #fff !important;
+  font-size: 18px;
+  text-decoration: none;
+  line-height: 22px;
+  margin-top: -11px;
+}
+
+.services-view > .p-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #000;
+  text-align: center;
+}
+
+.services-view:nth-child(3) {
+  margin-right: 0;
+}
+
+.services-view > .text {
+  position: relative;
+  padding: 35px 15px 15px 15px;
+  font-size: 14px;
+}
+
+.services-view > .text > a {
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  background-color: #9b59b6;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.services-view > .text > .icon {
+  display: block;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -60px;
+  background: #9b59b6;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+
+.services-view > .text > .icon > .image {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: -25px auto;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-animation: heartbeat 2s infinite;
+  -moz-animation: heartbeat 2s infinite;
+  animation: heartbeat 2s infinite;
+}
+
+.services-view > .inner {
+  max-width: 1200px;
+  padding: 30px 20px;
+  background: #fff;
+  width: 100%;
+  margin: 25px auto;
+  font-size: 14px;
+  color: #000;
+}
+
+.services-view > .inner > .pricing {
+  margin-bottom: 15px;
+}
+
+.services-view > .inner > .pricing > .label {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 5px;
+}
+
+.services-view > .inner > .pricing > .price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.services-view > .inner > .body {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.services-view > .inner > .title {
+  display: block;
+  font-size: 22px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.services-view > .inner > .attached {
+  border-top: 1px solid #efefed;
+  padding: 15px 0;
+  font-size: 0;
+}
+
+.services-view > .inner > .attached > a.item {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center center;
+  margin: 10px;
+}

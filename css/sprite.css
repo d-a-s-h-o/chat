@@ -1,0 +1,1018 @@
+/* Sprites */
+.container
+  > header
+  > .centerWrap
+  > .userNav
+  > .userDrop
+  > .event
+  > .username::after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  max-height: 12px;
+  max-width: 12px;
+  content: "";
+  background-image: url(../images/sprite.png);
+  margin-top: -6px;
+  width: 32px;
+  height: 32px;
+  background-position: 88.2056% 17.2917%;
+  background-size: 3200%;
+}
+
+.decaptcha > .init-ui:after {
+  position: absolute;
+  top: 58%;
+  right: 12px;
+  margin-top: -21px;
+  max-width: 42px;
+  max-height: 35px;
+  width: 42px;
+  height: 42px;
+  background-repeat: no-repeat;
+  background-image: url(../images/sprite.png);
+  content: "";
+  background-position: 76.2987% 0.461894%;
+  background-size: 1024%;
+}
+
+.filterSettings > .timespan:after {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  content: "";
+  background-image: url(../images/filter.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+}
+
+form.chatroom-form > .mute-btn > .icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  margin: -10px auto 0;
+  background-image: url(../images/muted-user.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.chatroom_container .message-window > .item > .bubble > .action-menu {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin-top: -10px;
+  background-image: url(../images/chat-action.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  right: 15px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.suggested_module > .suggested > .icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #9b59b6;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../images/dread-icon-lg.png);
+  margin-right: 10px;
+}
+
+.admin-panel > .panel-content .panel-list.subdreads > .item > .icon {
+  position: absolute;
+  left: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #9b59b6;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../images/dread-icon-lg.png);
+  top: 50%;
+  margin-top: -25px;
+}
+
+.modadmin_list > .item > .left > .icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  background-color: #9b59b6;
+  margin-right: 10px;
+  background-image: url(../images/dread-icon-lg.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.modadmin > .item.unread > .icon {
+  background-position: 28.125% 27.6786%;
+  background-image: url(../images/sprite.png);
+}
+
+.modadmin > .item > .icon {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 40px;
+  max-height: 40px;
+  margin-right: 15px;
+  background-image: url(../images/sprite.png);
+  background-repeat: no-repeat;
+  width: 64px;
+  height: 64px;
+  background-position: 21.25% 27.6786%;
+  background-size: 1600%;
+}
+
+.colorPicker > .colors > .item:after {
+  display: none;
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/check.png);
+  background-size: 30px 30px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: -15px auto 0 auto;
+}
+
+.conversationView > .messageHeader > .right > .action > .event {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/more-icon.png);
+  background-size: 32px 32px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.conversationView > .messageHeader > .recipient > .icon {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 40px;
+  max-height: 40px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  background-size: contain;
+  width: 64px;
+  height: 64px;
+  background: #9b59b6 url(../images/sprite.png) no-repeat 55.625% 27.6786%;
+  background-size: 1600%;
+}
+
+.conversationList > .inner > .list > .item.unread > .icon {
+  background-position: 28.125% 27.6786%;
+  background-size: 1600%;
+}
+
+.conversationList > .inner > .list > .item > .icon {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 40px;
+  max-height: 40px;
+  margin-right: 15px;
+  background-image: url(../images/sprite.png);
+  background-repeat: no-repeat;
+  width: 64px;
+  height: 64px;
+  background-position: 21.25% 27.6786%;
+  background-size: 1600%;
+}
+
+.notificationBoard .list > .item > .icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  background-image: url(../images/notification.png);
+  background-size: 50% 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.popout-box.login:after {
+  background-color: #713c86;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  content: "";
+  background-image: url(../images/dread-d.png);
+  background-position: center center;
+  background-size: 60% auto;
+  background-repeat: no-repeat;
+}
+
+.profileHeader > .inside > .right > .action > .event {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/more-icon.png);
+  background-size: 32px 32px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.profileHeader > .inside > .left > .usericon {
+  position: absolute;
+  left: 0;
+  max-width: 50px;
+  max-height: 50px;
+  background-color: #9b59b6;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  background-image: url(../images/sprite.png);
+  width: 64px;
+  height: 64px;
+  background-position: 55.625% 27.6786%;
+  background-size: 1600%;
+}
+
+.postComments .comment > .commentContent > .top > .username > .flair.sticky {
+  background-color: #27ae60;
+  background-image: url(../images/sprite.png);
+  background-repeat: no-repeat;
+  max-height: 16px;
+  max-width: 16px;
+  width: 32px;
+  height: 32px;
+  background-position: 89.9% 42.5%;
+  background-size: 2322%;
+}
+
+.container > .dreadSidebar > .sub-header > .subicon {
+  display: block;
+  margin: 0 auto 10px auto;
+  width: 60px;
+  height: 60px;
+  background-color: #9b59b6;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  background-image: url(../images/dread-icon-lg.png);
+}
+
+.container > .dreadSidebar > .sect > .heading {
+  display: block;
+  margin-bottom: 15px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 16px;
+  color: #000;
+  background-position: 0 center;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+}
+
+.container > .dreadSidebar > .sect > .heading.icon {
+  padding-left: 30px;
+}
+
+.container > .dreadSidebar > .sect > .heading.subs {
+  background-image: url(../images/sidebar-subs.png);
+}
+
+.container > .dreadSidebar > .sect > .heading.mods {
+  background-image: url(../images/sidebar-mods.png);
+}
+.container > .dreadSidebar > .sect > .heading.mods::before {
+  width: 30px;
+  background-position: 75.9557% 42.5%;
+  background-size: 3413.33%;
+  background-image: url(../images/sprite.png);
+}
+
+.container > .dreadSidebar > .sect > .heading.tools {
+  background-image: url(../images/sidebar-tools.png);
+}
+.sprite-sidebar-mods {
+}
+.sprite-sidebar-subs {
+  width: 32px;
+  height: 32px;
+  background-position: 79.3347% 42.5%;
+  background-size: 3200%;
+}
+.sprite-sidebar-tools {
+  width: 30px;
+  height: 32px;
+  background-position: 82.5956% 42.5%;
+  background-size: 3413.33%;
+}
+
+.container > .content > .postBoard > .item > .postTop > .title > .flair.sticky {
+  background-color: #27ae60;
+  background-image: url(../images/sticky.png);
+  background-size: 70% 70%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 18px;
+  width: 18px;
+  padding: 0;
+}
+
+.container > .content > .postBoard > .item > .postTop > .title > .flair.locked {
+  background-color: #2c3e50;
+  background-image: url(../images/locked.png);
+  background-size: 70% 70%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 18px;
+  width: 18px;
+  padding: 0;
+}
+
+.post_queue > .item > .icon {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 40px;
+  max-height: 40px;
+  margin-right: 15px;
+  background-repeat: no-repeat;
+  background-image: url(../images/sprite.png);
+  width: 64px;
+  height: 64px;
+  background-position: 41.875% 27.6786%;
+  background-size: 1600%;
+}
+
+.post_queue > .item > .icon.comment {
+  width: 64px;
+  height: 64px;
+  background-position: 94.6875% 0.446429%;
+  background-size: 1600%;
+}
+
+.post_queue > .item > .icon.user {
+  width: 64px;
+  height: 64px;
+  background-position: 48.75% 27.6786%;
+  background-size: 1600%;
+  background-image: url(../images/sprite.png);
+}
+
+.container > .content > .postBoard > .item.comment > .icon {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 37px;
+  max-height: 25px;
+  margin-right: 15px;
+  width: 64px;
+  height: 64px;
+  background-position: 94.85% 0.5%;
+  background-size: 1126%;
+  background-image: url(../images/sprite.png);
+}
+
+.filterSettings > .sort {
+  display: inline-block;
+  vertical-align: top;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 20px;
+  padding-left: 25px;
+  position: relative;
+  background-position: 0 center;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  font-size: 12px;
+  color: #a1a1a1;
+  background-image: url(../images/sort.png);
+}
+
+.postComments .comment > form.voting > button,
+.postComments .comment > form.voting > a {
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin: 0 auto 5px auto;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  background-size: 18px auto;
+  background: no-repeat 0 0;
+  text-decoration: none;
+}
+
+.container > .content > .postBoard > .item > .voting > button,
+.container > .content > .postBoard > .item > .voting > a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  outline: 0;
+  border: none;
+  margin: 0 auto;
+  background-size: 20px auto;
+  background: none no-repeat 0 0;
+  text-decoration: none;
+}
+
+button[name="vote_up"],
+a[name="vote_up"] {
+  background-image: url(../images/sprite.png) !important;
+  background-position: 74.496% 17.2917% !important;
+  background-size: 3200% !important;
+  margin-bottom: 5px !important;
+}
+
+button[name="vote_up"]:hover,
+a[name="vote_up"]:hover,
+button[name="vote_up"].voted {
+  background-image: url(../images/sprite.png) !important;
+  background-position: 77.9234% 17.2917% !important;
+  margin-bottom: 5px !important;
+}
+
+button[name="vote_down"],
+a[name="vote_down"] {
+  background-image: url(../images/sprite.png) !important;
+  background-position: 98.2863% 0.416667% !important;
+  background-size: 3200% !important;
+  margin-top: 5px !important;
+}
+
+button[name="vote_down"]:hover,
+a[name="vote_down"]:hover,
+button[name="vote_down"].voted {
+  background-image: url(../images/sprite.png) !important;
+  background-position: 71.0685% 17.2917% !important;
+  margin-top: 5px !important;
+}
+
+.container
+  > header
+  > .centerWrap
+  > .userNav
+  > .userDrop
+  > .dropdown
+  > .panel
+  > a:before {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  width: 18px;
+  height: 18px;
+  content: "";
+  margin-top: -9px;
+  background-image: url(../images/sprite.png);
+}
+
+.container
+  > header
+  > .centerWrap
+  > .userNav
+  > .userDrop
+  > .dropdown
+  > .panel
+  > a.profile:before {
+  background-position: 48.6895% 42.5%;
+  background-size: 3200%;
+}
+.container
+  > header
+  > .centerWrap
+  > .userNav
+  > .userDrop
+  > .dropdown
+  > .panel
+  > a.profile:hover::before {
+  background-position: 52.1169% 42.5%;
+}
+
+.container
+  > header
+  > .centerWrap
+  > .userNav
+  > .userDrop
+  > .dropdown
+  > .panel
+  > a.subscriptions:before {
+  background-position: 62.3992% 42.5%;
+  background-size: 3200%;
+}
+.container
+  > header
+  > .centerWrap
+  > .userNav
+  > .userDrop
+  > .dropdown
+  > .panel
+  > a.subscriptions:hover::before {
+  background-position: 65.8266% 42.5%;
+  background-size: 3200%;
+}
+
+.container
+  > header
+  > .centerWrap
+  > .userNav
+  > .userDrop
+  > .dropdown
+  > .panel
+  > a.signout:before {
+  background-position: 77.621% 25.8333%;
+  background-size: 3200%;
+}
+.container
+  > header
+  > .centerWrap
+  > .userNav
+  > .userDrop
+  > .dropdown
+  > .panel
+  > a.signout:hover::before {
+  background-position: 81.0484% 25.8333%;
+  background-size: 3200%;
+}
+
+.container
+  > header
+  > .centerWrap
+  > .userNav
+  > .userDrop
+  > .dropdown
+  > .panel
+  > a.account:before {
+  background-position: 63.9113% 25.8333%;
+  background-size: 3200%;
+}
+.container
+  > header
+  > .centerWrap
+  > .userNav
+  > .userDrop
+  > .dropdown
+  > .panel
+  > a.account:hover::before {
+  background-position: 67.3387% 25.8333%;
+  background-size: 3200%;
+}
+
+.container
+  > header
+  > .centerWrap
+  > .userNav
+  > .userDrop
+  > .dropdown
+  > .panel
+  > a.donate:before {
+  background-position: 70.7661% 25.8333%;
+  background-size: 3200%;
+}
+.container
+  > header
+  > .centerWrap
+  > .userNav
+  > .userDrop
+  > .dropdown
+  > .panel
+  > a.donate:hover::before {
+  background-position: 74.1935% 25.8333%;
+  background-size: 3200%;
+}
+
+.container
+  > header
+  > .centerWrap
+  > .userNav
+  > .userDrop
+  > .dropdown
+  > .panel
+  > a.management:before {
+  background-position: 84.4758% 25.8333%;
+  background-size: 3200%;
+}
+.container
+  > header
+  > .centerWrap
+  > .userNav
+  > .userDrop
+  > .dropdown
+  > .panel
+  > a.management:hover::before {
+  background-position: 87.9032% 25.8333%;
+  background-size: 3200%;
+}
+
+.container
+  > input[type="checkbox"][name="toggleSidebar"]:checked
+  ~ header
+  > .centerWrap
+  > .userNav
+  > .iconLink.sidebar
+  > span,
+.container
+  > input[type="checkbox"][name="toggleSidebar"]:hover
+  ~ header
+  > .centerWrap
+  > .userNav
+  > .iconLink.sidebar
+  > span {
+  background-position: 58.9718% 42.5% !important;
+  background-size: 3200%;
+}
+
+.sprite-chat-action {
+  width: 32px;
+  height: 32px;
+  background-position: 81.3508% 17.2917%;
+  background-size: 3200%;
+}
+.sprite-check {
+  width: 32px;
+  height: 32px;
+  background-position: 84.7782% 17.2917%;
+  background-size: 3200%;
+}
+.sprite-chevron-down {
+  width: 32px;
+  height: 32px;
+  background-position: 88.2056% 17.2917%;
+  background-size: 3200%;
+}
+.sprite-comment-reply {
+  width: 64px;
+  height: 64px;
+  background-position: 94.6875% 0.446429%;
+  background-size: 1600%;
+}
+.sprite-decaptcha-logo {
+  width: 100px;
+  height: 79px;
+  background-position: 76.2987% 0.461894%;
+  background-size: 1024%;
+}
+.sprite-decaptcha-logo-night {
+  width: 30px;
+  height: 23.7px;
+  background-position: 87.3377% 0.461894%;
+  background-size: 1024%;
+}
+.sprite-donate-title {
+  width: 377px;
+  height: 120px;
+  background-position: 31.5301% 0.510204%;
+  background-size: 271.618%;
+}
+.sprite-dread-d {
+  width: 120px;
+  height: 120px;
+  background-position: 64.4912% 0.510204%;
+  background-size: 853.333%;
+}
+.sprite-dread-icon {
+  width: 30px;
+  height: 30px;
+  background-position: 98.0885% 7.46888%;
+  background-size: 3413.33%;
+}
+.sprite-dread-icon-lg {
+  width: 200px;
+  height: 200px;
+  background-position: 0.242718% 0.641026%;
+  background-size: 512%;
+}
+.sprite-filter {
+  width: 32px;
+  height: 32px;
+  background-position: 91.6331% 17.2917%;
+  background-size: 3200%;
+}
+.sprite-full-logo {
+  width: 377px;
+  height: 120px;
+  background-position: 0.309119% 52.0408%;
+  background-size: 271.618%;
+}
+.sprite-locked {
+  width: 32px;
+  height: 32px;
+  background-position: 95.0605% 17.2917%;
+  background-size: 3200%;
+}
+.sprite-message {
+  width: 64px;
+  height: 64px;
+  background-position: 21.25% 27.6786%;
+  background-size: 1600%;
+}
+.sprite-message-unread {
+  width: 64px;
+  height: 64px;
+  background-position: 28.125% 27.6786%;
+  background-size: 1600%;
+}
+.sprite-more-icon {
+  width: 32px;
+  height: 32px;
+  background-position: 98.4879% 17.2917%;
+  background-size: 3200%;
+}
+.sprite-muted-user {
+  width: 32px;
+  height: 32px;
+  background-position: 60.4839% 25.8333%;
+  background-size: 3200%;
+}
+.sprite-nav-account {
+  width: 32px;
+  height: 32px;
+  background-position: 63.9113% 25.8333%;
+  background-size: 3200%;
+}
+.sprite-nav-account:hover {
+  width: 32px;
+  height: 32px;
+  background-position: 67.3387% 25.8333%;
+  background-size: 3200%;
+}
+.sprite-nav-donate {
+  width: 32px;
+  height: 32px;
+  background-position: 70.7661% 25.8333%;
+  background-size: 3200%;
+}
+.sprite-nav-donate:hover {
+  width: 32px;
+  height: 32px;
+  background-position: 74.1935% 25.8333%;
+  background-size: 3200%;
+}
+.sprite-nav-logout {
+  width: 25px;
+  height: 25px;
+  background-position: 77.621% 25.8333%;
+  background-size: 3200%;
+}
+.sprite-nav-logout:hover {
+  width: 25px;
+  height: 25px;
+  background-position: 81.0484% 25.8333%;
+  background-size: 3200%;
+}
+.sprite-nav-management {
+  width: 32px;
+  height: 32px;
+  background-position: 84.4758% 25.8333%;
+  background-size: 3200%;
+}
+.sprite-nav-management:hover {
+  width: 32px;
+  height: 32px;
+  background-position: 87.9032% 25.8333%;
+  background-size: 3200%;
+}
+.sprite-nav-messages {
+  width: 32px;
+  height: 32px;
+  background-position: 91.3306% 25.8333%;
+  background-size: 3200%;
+}
+.sprite-nav-messages:hover {
+  width: 32px;
+  height: 32px;
+  background-position: 94.7581% 25.8333%;
+  background-size: 3200%;
+}
+.sprite-nav-modadmin {
+  width: 25px;
+  height: 25px;
+  background-position: 98.1855% 25.8333%;
+  background-size: 3200%;
+}
+.sprite-nav-modadmin:hover {
+  width: 25px;
+  height: 25px;
+  background-position: 38.4073% 42.5%;
+  background-size: 3200%;
+}
+.sprite-nav-notifications {
+  width: 25px;
+  height: 25px;
+  background-position: 41.8347% 42.5%;
+  background-size: 3200%;
+}
+.sprite-nav-notifications:hover {
+  width: 25px;
+  height: 25px;
+  background-position: 45.2621% 42.5%;
+  background-size: 3200%;
+}
+.sprite-nav-profile {
+  width: 25px;
+  height: 25px;
+  background-position: 48.6895% 42.5%;
+  background-size: 3200%;
+}
+.sprite-nav-profile:hover {
+  width: 25px;
+  height: 25px;
+  background-position: 52.1169% 42.5%;
+  background-size: 3200%;
+}
+.sprite-nav-sidebar {
+  width: 32px;
+  height: 32px;
+  background-position: 55.5444% 42.5%;
+  background-size: 3200%;
+}
+.sprite-nav-sidebar:hover {
+  width: 32px;
+  height: 32px;
+  background-position: 58.9718% 42.5%;
+  background-size: 3200%;
+}
+.sprite-nav-subs {
+  width: 32px;
+  height: 32px;
+  background-position: 62.3992% 42.5%;
+  background-size: 3200%;
+}
+.sprite-nav-subs:hover {
+  width: 32px;
+  height: 32px;
+  background-position: 65.8266% 42.5%;
+  background-size: 3200%;
+}
+.sprite-notification {
+  width: 64px;
+  height: 64px;
+  background-position: 35% 27.6786%;
+  background-size: 1600%;
+}
+.sprite-post {
+  width: 64px;
+  height: 64px;
+  background-position: 41.875% 27.6786%;
+  background-size: 1600%;
+}
+.sprite-search {
+  width: 32px;
+  height: 32px;
+  background-position: 69.254% 42.5%;
+  background-size: 3200%;
+}
+.sprite-search:hover {
+  width: 32px;
+  height: 32px;
+  background-position: 72.6815% 42.5%;
+  background-size: 3200%;
+}
+.sprite-sidebar-mods {
+  width: 30px;
+  height: 32px;
+  background-position: 75.9557% 42.5%;
+  background-size: 3413.33%;
+}
+.sprite-sidebar-subs {
+  width: 32px;
+  height: 32px;
+  background-position: 79.3347% 42.5%;
+  background-size: 3200%;
+}
+.sprite-sidebar-tools {
+  width: 30px;
+  height: 32px;
+  background-position: 82.5956% 42.5%;
+  background-size: 3413.33%;
+}
+.sprite-sort {
+  width: 32px;
+  height: 32px;
+  background-position: 85.9879% 42.5%;
+  background-size: 3200%;
+}
+.sprite-sticky {
+  width: 32px;
+  height: 32px;
+  background-position: 89.4153% 42.5%;
+  background-size: 3200%;
+}
+.sprite-user {
+  width: 25px;
+  height: 25px;
+  background-position: 48.75% 27.6786%;
+  background-size: 1600%;
+}
+.sprite-user-icon {
+  width: 25px;
+  height: 25px;
+  background-position: 55.625% 27.6786%;
+  background-size: 1600%;
+  right: 70px;
+  position: fixed;
+}
+.sprite-vote-down {
+  width: 32px;
+  height: 32px;
+  background-position: 98.2863% 0.416667%;
+  background-size: 3200%;
+}
+.sprite-vote-down:hover {
+  width: 32px;
+  height: 32px;
+  background-position: 71.0685% 17.2917%;
+  background-size: 3200%;
+}
+.sprite-vote-up {
+  width: 32px;
+  height: 32px;
+  background-position: 74.496% 17.2917%;
+  background-size: 3200%;
+}
+.sprite-vote-up:hover {
+  width: 32px;
+  height: 32px;
+  background-position: 77.9234% 17.2917%;
+  background-size: 3200%;
+}
+
+.sprite-chat-action,
+.sprite-check,
+.sprite-chevron-down,
+.sprite-comment-reply,
+.sprite-decaptcha-logo,
+.sprite-decaptcha-logo-night,
+.sprite-donate-title,
+.sprite-dread-d,
+.sprite-dread-icon,
+.sprite-dread-icon-lg,
+.sprite-filter,
+.sprite-full-logo,
+.sprite-locked,
+.sprite-message,
+.sprite-message-unread,
+.sprite-more-icon,
+.sprite-muted-user,
+.sprite-nav-account,
+.sprite-nav-account:hover,
+.sprite-nav-donate,
+.sprite-nav-donate:hover,
+.sprite-nav-logout,
+.sprite-nav-logout:hover,
+.sprite-nav-management,
+.sprite-nav-management:hover,
+.sprite-nav-messages,
+.sprite-nav-messages:hover,
+.sprite-nav-modadmin,
+.sprite-nav-modadmin:hover,
+.sprite-nav-notifications,
+.sprite-nav-notifications:hover,
+.sprite-nav-profile,
+.sprite-nav-profile:hover,
+.sprite-nav-sidebar,
+.sprite-nav-sidebar:hover,
+.sprite-nav-subs,
+.sprite-nav-subs:hover,
+.sprite-notification,
+.sprite-post,
+.sprite-search,
+.sprite-search:hover,
+.sprite-sidebar-mods,
+.sprite-sidebar-subs,
+.sprite-sidebar-tools,
+.sprite-sort,
+.sprite-sticky,
+.sprite-user,
+.sprite-user-icon,
+.sprite-vote-down,
+.sprite-vote-down:hover,
+.sprite-vote-up,
+.sprite-vote-up:hover {
+  display: inline-block;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-image: url(../pngs/sprite.png) !important;
+}

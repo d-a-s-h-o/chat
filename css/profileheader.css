@@ -1,0 +1,135 @@
+.profileHeader {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.profileHeader > .inside {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+}
+
+.profileHeader > .inside > .left {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  padding-left: 65px;
+  position: relative;
+  height: 50px;
+}
+
+.profileHeader > .inside > .left > .username {
+  font-size: 18px;
+  font-weight: bold;
+  color: #9b59b6;
+  text-decoration: none;
+  margin-bottom: 5px;
+  display: inline-block;
+  height: 22px;
+  line-height: 22px;
+  margin-top: 5px;
+}
+
+.profileHeader > .inside > .left > .username.admin {
+  color: #e74c3c;
+}
+
+.profileHeader > .inside > .left > .username.moderator {
+  color: #2ecc71;
+}
+
+.profileHeader > .inside > .left > .username > .flair {
+  background-color: #efefef;
+  color: #000;
+  display: inline-block;
+  font-size: 12px;
+  padding: 0 5px;
+  vertical-align: middle;
+  margin-left: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-weight: normal;
+  height: 18px;
+  line-height: 18px;
+}
+
+.profileHeader > .inside > .left > .userscore {
+  font-size: 12px;
+  height: 14px;
+  line-height: 14px;
+}
+
+.profileHeader > .inside > .right {
+  float: right;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  padding-right: 55px;
+  height: 50px;
+}
+
+.profileHeader > .inside > .right > .stat {
+  display: inline-block;
+  vertical-align: middle;
+  height: 50px;
+  line-height: 50px;
+  margin-right: 20px;
+  color: #666;
+  font-size: 14px;
+}
+
+.profileHeader > .inside > .right > .action {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -20px;
+  height: 40px;
+  width: 40px;
+}
+
+.profileHeader > .inside > .right > .action > .event:hover {
+  cursor: pointer;
+}
+
+.profileHeader > .inside > .right > .action > .event:hover ~ .dropdown {
+  display: block !important;
+}
+
+.profileHeader > .inside > .right > .action > .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100px;
+  background: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.profileHeader > .inside > .right > .action > .dropdown:hover {
+  display: block;
+}
+
+.profileHeader > .inside > .right > .action > .dropdown > a {
+  display: block;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  color: #000;
+  font-size: 14px;
+  padding: 0 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.profileHeader > .inside > .right > .action > .dropdown > a:hover {
+  background: #9b59b6;
+  color: #fff;
+}

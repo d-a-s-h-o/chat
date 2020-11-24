@@ -1,0 +1,212 @@
+.colorPicker {
+  display: block;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+  font-size: 0;
+  margin-bottom: 15px;
+}
+
+.colorPicker > input[type="radio"] {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: calc(100% / 5);
+  height: calc(100% / 3);
+  cursor: pointer;
+  opacity: 0;
+  z-index: 5;
+}
+
+.colorPicker > .colors {
+  display: block;
+  width: 100%;
+}
+
+.colorPicker > .colors > .item {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% / 5);
+  padding-bottom: calc(100% / 5);
+  position: relative;
+}
+
+.colorPicker > input[type="radio"][value="1"] {
+  top: 0;
+  left: 0;
+}
+
+.colorPicker > input[type="radio"][value="2"] {
+  top: 0;
+  left: calc(100% / 5 * 1);
+}
+
+.colorPicker > input[type="radio"][value="3"] {
+  top: 0;
+  left: calc(100% / 5 * 2);
+}
+
+.colorPicker > input[type="radio"][value="4"] {
+  top: 0;
+  left: calc(100% / 5 * 3);
+}
+
+.colorPicker > input[type="radio"][value="5"] {
+  top: 0;
+  left: calc(100% / 5 * 4);
+}
+
+.colorPicker > input[type="radio"][value="6"] {
+  top: calc(100% / 3 * 1);
+  left: 0;
+}
+
+.colorPicker > input[type="radio"][value="7"] {
+  top: calc(100% / 3 * 1);
+  left: calc(100% / 5 * 1);
+}
+
+.colorPicker > input[type="radio"][value="8"] {
+  top: calc(100% / 3 * 1);
+  left: calc(100% / 5 * 2);
+}
+
+.colorPicker > input[type="radio"][value="9"] {
+  top: calc(100% / 3 * 1);
+  left: calc(100% / 5 * 3);
+}
+
+.colorPicker > input[type="radio"][value="10"] {
+  top: calc(100% / 3 * 1);
+  left: calc(100% / 5 * 4);
+}
+
+.colorPicker > input[type="radio"][value="11"] {
+  top: calc(100% / 3 * 2);
+  left: 0;
+}
+
+.colorPicker > input[type="radio"][value="12"] {
+  top: calc(100% / 3 * 2);
+  left: calc(100% / 5 * 1);
+}
+
+.colorPicker > input[type="radio"][value="13"] {
+  top: calc(100% / 3 * 2);
+  left: calc(100% / 5 * 2);
+}
+
+.colorPicker > input[type="radio"][value="14"] {
+  top: calc(100% / 3 * 2);
+  left: calc(100% / 5 * 3);
+}
+
+.colorPicker > input[type="radio"][value="15"] {
+  top: calc(100% / 3 * 2);
+  left: calc(100% / 5 * 4);
+}
+
+.colorPicker
+  > input[type="radio"][value="1"]:checked
+  ~ .colors
+  > .item:nth-child(1):after {
+  display: block;
+}
+
+.colorPicker
+  > input[type="radio"][value="2"]:checked
+  ~ .colors
+  > .item:nth-child(2):after {
+  display: block;
+}
+
+.colorPicker
+  > input[type="radio"][value="3"]:checked
+  ~ .colors
+  > .item:nth-child(3):after {
+  display: block;
+}
+
+.colorPicker
+  > input[type="radio"][value="4"]:checked
+  ~ .colors
+  > .item:nth-child(4):after {
+  display: block;
+}
+
+.colorPicker
+  > input[type="radio"][value="5"]:checked
+  ~ .colors
+  > .item:nth-child(5):after {
+  display: block;
+}
+
+.colorPicker
+  > input[type="radio"][value="6"]:checked
+  ~ .colors
+  > .item:nth-child(6):after {
+  display: block;
+}
+
+.colorPicker
+  > input[type="radio"][value="7"]:checked
+  ~ .colors
+  > .item:nth-child(7):after {
+  display: block;
+}
+
+.colorPicker
+  > input[type="radio"][value="8"]:checked
+  ~ .colors
+  > .item:nth-child(8):after {
+  display: block;
+}
+
+.colorPicker
+  > input[type="radio"][value="9"]:checked
+  ~ .colors
+  > .item:nth-child(9):after {
+  display: block;
+}
+
+.colorPicker
+  > input[type="radio"][value="10"]:checked
+  ~ .colors
+  > .item:nth-child(10):after {
+  display: block;
+}
+
+.colorPicker
+  > input[type="radio"][value="11"]:checked
+  ~ .colors
+  > .item:nth-child(11):after {
+  display: block;
+}
+
+.colorPicker
+  > input[type="radio"][value="12"]:checked
+  ~ .colors
+  > .item:nth-child(12):after {
+  display: block;
+}
+
+.colorPicker
+  > input[type="radio"][value="13"]:checked
+  ~ .colors
+  > .item:nth-child(13):after {
+  display: block;
+}
+
+.colorPicker
+  > input[type="radio"][value="14"]:checked
+  ~ .colors
+  > .item:nth-child(14):after {
+  display: block;
+}
+
+.colorPicker
+  > input[type="radio"][value="15"]:checked
+  ~ .colors
+  > .item:nth-child(15):after {
+  display: block;
+}

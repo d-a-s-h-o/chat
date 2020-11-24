@@ -1,0 +1,75 @@
+.myAdList {
+  display: block;
+  width: 100%;
+}
+
+.myAdList > .item {
+  display: block;
+  width: 100%;
+  font-size: 0;
+  padding: 15px;
+}
+
+.myAdList > .item:nth-child(odd) {
+  background: #efefed;
+}
+
+.myAdList > .item .left {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 20px;
+  width: calc(100% - 150px);
+  font-size: 14px;
+}
+
+.myAdList > .item .left > .title {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #9b59b6;
+  font-weight: bold;
+}
+
+.myAdList > .item .left > .title > a {
+  text-decoration: none;
+}
+
+.myAdList > .item .left > .image {
+  display: block;
+  max-width: 300px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.myAdList > .item .left > .image > .display {
+  display: block;
+  width: 100%;
+  padding-bottom: 25%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.myAdList > .item .left > .url {
+  margin-bottom: 5px;
+}
+
+.myAdList > .item .right {
+  width: 150px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  text-align: right;
+}
+
+.myAdList > .item .right > div {
+  margin-bottom: 5px;
+}
+
+.myAdList > .item .right > .standardBtn {
+  text-align: center;
+  display: block;
+  width: 100%;
+  position: relative;
+  margin: 10px 0 0;
+  padding: 0;
+}

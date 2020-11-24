@@ -1,0 +1,99 @@
+.login {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--lv2-col);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.login h1 #chatname {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.login form table {
+  background-color: var(--accent2);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ddd;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  box-shadow: 1px 1px 2px black, 0 0 1em white, 1px 0 1px black, 0 1px 1px black,
+  -1px 0 1px black, 0 -1px 1px black;
+  margin-top: 15px;
+}
+
+.login input[type="password"] {
+  background-color: var(--accent2);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ddd;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}
+
+.login input[type="text"] {
+  background-color: var(--accent2);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ddd;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}
+
+.login select[name="colour"] {
+  background-color: var(--accent2);
+  color: var(--button-text-col);
+  padding: 0.3em;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ddd;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}
+
+.login select[name="colour"]:hover {
+  padding: 0.3em;
+  text-align: left;
+  color: var(--accent);
+  background-color: var(--accent2);
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}
+
+.login input[value="Enter Chat"] {
+  background-color: var(--accent2);
+  color: var(--button-text-col);
+  padding: 0.3em;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ddd;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}
+
+.onionlink {
+  color:#7D4698;
+  float: right;
+}
+
+.clearnetlink {
+  float: right;
+  color: #856300;
+}
+
+span.line {
+  display: inline-block;
+}
+
+.ImContact {
+  text-decoration: underline dotted var(--accent) !important;
+  color: var(--accent) !important;
+  cursor: help !important;
+}
+
+.captchalogincbox {
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}

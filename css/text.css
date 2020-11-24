@@ -1,0 +1,54 @@
+.termtext {
+  background-color: #000;
+  color: #fff;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+}
+
+.guitext {
+  background-color: #fff;
+  color: #2a2a2a;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+}
+
+.commtext {
+  background-color: #121525;
+  color: #fff;
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
+  text-align: center;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.commtext a:link {
+  color: white;
+}
+.commtext a:visited {
+  color: #b1a1c9;
+}
+.commtext a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.hlo {
+  background-color: #007aae;
+  color: #fff;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+}

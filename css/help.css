@@ -1,0 +1,126 @@
+body.help {
+  background-color: var(--lv3-col) !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+body.help>div.dam {
+  background-color: var(--lv2-col) !important;
+  padding: 0.3em;
+  border-radius: 0.3em;
+
+}
+
+body.help>hr {
+  padding: unset !important;
+  color: var(--accent) !important;
+}
+
+body.help>h2 {
+  color: var(--accent) !important;
+}
+
+body.sessions {
+  background-color: var(--lv3-col) !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+body.sessions>h1 {
+  color: var(--accent) !important;
+}
+
+.sessions input[value="Refresh Session"] {
+  background-color: var(--accent2);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ddd;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--button-text-col);
+  transition: background-color, color, 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.sessions input[value="Refresh Session"]:hover {
+  background-color: var(--accent);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ffffff;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--accent2);
+}
+
+.sessions input[value="Logout"] {
+  background-color: var(--accent2);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ddd;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--button-text-col);
+  transition: background-color, color, 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.sessions input[value="Logout"]:hover {
+  background-color: var(--accent);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ffffff;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--accent2);
+}
+
+.sessions input[value="Kick"] {
+  background-color: var(--accent2);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ddd;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--button-text-col);
+  transition: background-color, color, 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.sessions input[value="Kick"]:hover {
+  background-color: var(--accent);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ffffff;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--accent2);
+}
+
+.sessions input[value="Reload"] {
+  background-color: var(--accent2);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ddd;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--button-text-col);
+  transition: background-color, color, 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.sessions input[value="Reload"]:hover {
+  background-color: var(--accent);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ffffff;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--accent2);
+}
+
+body.emails {
+  background-color: var(--lv3-col) !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+body.emails>h2 {
+  color: var(--accent) !important;
+}

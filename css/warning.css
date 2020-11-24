@@ -1,0 +1,14 @@
+.warning a:link{
+    color: white;
+}
+.warning a:visited{
+    color: #f1f1f1;
+}
+.warning a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.warning{ background-color: #FF1919; border: 1px; padding: 10px; padding-left: 10px; padding-right: 10px;  }
+
+.warning p{ color: white; margin-top: 0; margin-bottom: 0;}

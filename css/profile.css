@@ -1,0 +1,242 @@
+.profile {
+  background-color: var(--lv3-col);
+}
+
+.profile h2 {
+  color: var(--accent);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile table tr td table {
+  padding: 0.5em 0.5em;
+  background-color: var(--lv2-col);
+  border: solid var(--lv3-col);
+}
+
+.profile table tr td table th,
+.profile table tr td table tr td th {
+  padding: unset;
+  color: var(--accent);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile table tr td table td form {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile table tr td hr {
+  padding: unset;
+  color: var(--accent);
+}
+
+.profile table tr td table tr td form input[value="View"] {
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--lv2-col);
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--button-text-col);
+  transition: background-color, color, 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.profile table tr td table tr td form input[value="View"]:hover {
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--lv3-col);
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--button-text-col);
+  cursor: pointer;
+}
+
+.profile table tr td table tr td input[type="password"],
+.profile table tr td table tr td textarea[type="password"] {
+  background-color: var(--lv2-col);
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  text-align: left;
+  max-width: 100%;
+  padding: 0.3em;
+}
+
+.profile table tr td table tr td input[type="text"],
+.profile table tr td table tr td textarea[type="text"] {
+  background-color: var(--lv2-col);
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  text-align: left;
+  max-width: 100%;
+  padding: 0.3em;
+}
+
+.profile table tr td table tr td table {
+  border: none !important;
+}
+
+.profile table tr td table tr td select[name="ignore"] {
+  background-color: var(--accent2);
+  color: var(--button-text-col);
+  padding: 0.3em;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}
+
+.profile table tr td table tr td select[name="ignore"]:hover {
+  padding: 0.3em;
+  text-align: left;
+  color: var(--accent);
+  background-color: var(--lv2-col);
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}
+
+.profile table tr td table tr td input[type="number"] {
+  background-color: var(--accent2);
+  color: var(--button-text-col);
+  padding: 0.3em;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}
+
+.profile table tr td table tr td input[type="number"]:hover {
+  padding: 0.3em;
+  text-align: left;
+  color: var(--accent);
+  background-color: var(--lv2-col);
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}
+
+.profile table tr td table tr td input[type="color"] {
+  background-color: var(--accent2);
+  color: var(--button-text-col);
+  padding: 0.3em;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}
+
+.profile table tr td table tr td input[type="color"]:hover {
+  padding: 0.3em;
+  text-align: left;
+  color: var(--accent);
+  background-color: var(--lv2-col);
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}
+
+.profile table tr td table tr td select[name="font"] {
+  background-color: var(--accent2);
+  color: var(--button-text-col);
+  padding: 0.3em;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}
+
+.profile table tr td table tr td select[name="font"]:hover {
+  padding: 0.3em;
+  text-align: left;
+  color: var(--accent);
+  background-color: var(--lv2-col);
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}
+
+.profile table tr td table tr td select[name="eninbox"] {
+  background-color: var(--accent2);
+  color: var(--button-text-col);
+  padding: 0.3em;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}
+
+.profile table tr td table tr td select[name="eninbox"]:hover {
+  padding: 0.3em;
+  text-align: left;
+  color: var(--accent);
+  background-color: var(--lv2-col);
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}
+
+.profile table tr td table tr td select[name="tz"] {
+  background-color: var(--accent2);
+  color: var(--button-text-col);
+  padding: 0.3em;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}
+
+.profile table tr td table tr td select[name="tz"]:hover {
+  padding: 0.3em;
+  text-align: left;
+  color: var(--accent);
+  background-color: var(--lv2-col);
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}
+
+.profile input[value="Save changes"] {
+  background-color: var(--accent2);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ddd;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--button-text-col);
+  transition: background-color, color, 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.profile input[value="Save changes"]:hover {
+  background-color: var(--accent);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ffffff;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--accent2);
+}
+
+p #changelang {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile table tr td table a {
+  color: white;
+  text-decoration: underline white dotted;
+}

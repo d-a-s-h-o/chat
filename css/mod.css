@@ -1,0 +1,297 @@
+.automod_table {
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+  font-size: 0;
+  margin-bottom: 25px;
+}
+
+.automod_table .item {
+  display: block;
+  width: 100%;
+  background: #efefed;
+}
+
+.automod_table .item > div {
+  display: inline-block;
+  vertical-align: top;
+  padding: 15px 10px;
+  font-size: 14px;
+}
+
+.automod_table .item > div > .label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.automod_table .item > div > .value {
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+.automod_table .item > div.modify > .value {
+  padding: 0;
+  height: 35px;
+}
+
+.automod_table .item > div.modify > .value .standardBtn {
+  margin-bottom: 0;
+}
+
+.automod_table .item > div.string {
+  min-width: 200px;
+}
+
+.automod_table .item > div.string .value {
+  padding: 0 5px;
+  background: #ccc;
+  letter-spacing: 2px;
+  height: 35px;
+  line-height: 35px;
+}
+
+.automod_table .item > div.reply {
+  width: 300px;
+}
+
+.automod_table .item > div.action {
+  min-width: 85px;
+}
+
+.moderator_list {
+  display: block;
+  width: 100%;
+}
+
+.moderator_list > .item {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 0;
+}
+
+.moderator_list > .item:nth-child(odd) {
+  background: #efefed;
+}
+
+.moderator_list > .item > .username {
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(100% - 100px);
+  padding-right: 15px;
+  font-size: 16px;
+}
+
+.moderator_list > .item > .username > a {
+  color: #9b59b6;
+  text-decoration: none;
+}
+
+.moderator_list > .item > .username > a > .flair {
+  background-color: #efefef;
+  color: #000;
+  display: inline-block;
+  font-size: 12px;
+  padding: 0 5px;
+  vertical-align: middle;
+  margin-left: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-weight: normal;
+  height: 20px;
+  line-height: 20px;
+}
+
+.moderator_list > .item > form.action {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100px;
+}
+
+.moderator_list > .item > form.action .standardBtn {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  margin: 0 0 5px;
+  display: block;
+}
+
+.moderator_list > .item > form.action .standardBtn:last-child {
+  margin-bottom: 0;
+}
+
+.moderation_log .item {
+  display: block;
+  width: 100%;
+  font-size: 0;
+  padding: 10px;
+}
+
+.moderation_log .item:nth-child(odd) {
+  background: #efefed;
+}
+
+.moderation_log .item > .text {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  width: calc(100% - 150px);
+  padding-right: 20px;
+}
+
+.moderation_log .item > .text a {
+  text-decoration: none;
+}
+
+.moderation_log .item > .text > .timestamp {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #999;
+}
+
+.moderation_log .item > .author {
+  display: inline-block;
+  vertical-align: middle;
+  width: 150px;
+  font-size: 12px;
+  text-align: right;
+}
+
+.moderation_log .item > .author a {
+  text-decoration: none;
+}
+
+.modadmin > .item {
+  display: block;
+  padding: 15px 0;
+  border-bottom: 1px solid #efefed;
+  opacity: 0.7;
+  font-size: 0;
+}
+
+.modadmin > .item:hover {
+  opacity: 1;
+}
+
+.modadmin > .item > .text {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  width: calc(100% - 55px);
+  overflow: hidden;
+}
+
+.modadmin > .item > .text > .title {
+  margin-bottom: 10px;
+}
+
+.modadmin > .item > .text > .title > a {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 18px;
+  text-decoration: none;
+  color: #9b59b6;
+}
+
+.modadmin > .item > .text > .body {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.modadmin > .item > .text > .body a {
+  text-decoration: none;
+}
+
+.modadmin > .item > .text > .timestamp {
+  color: #999;
+  font-size: 12px;
+}
+
+.modadmin > .item.unread {
+  opacity: 1;
+  border-left: 5px solid #9b59b6 !important;
+  padding-left: 20px;
+}
+
+.modadmin > .item.unread > .text > .title > a {
+  font-weight: bold;
+}
+
+.modadmin > .item.unread > .text > .body {
+  font-weight: bold;
+}
+
+.modadmin > .item:last-child {
+  border: none;
+}
+
+.modadmin_list > .item {
+  display: block;
+  width: 100%;
+  padding: 15px;
+}
+
+.modadmin_list > .item:nth-child(odd) {
+  background: #efefed;
+}
+
+.modadmin_list > .item > .left {
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(100% - 60px);
+}
+
+.modadmin_list > .item > .left > .text {
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(100% - 50px);
+}
+
+.modadmin_list > .item > .left > .text > .subname {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.modadmin_list > .item > .left > .text > .subname > a {
+  text-decoration: none;
+}
+
+.modadmin_list > .item > .left > .text > .conversation_count {
+  font-size: 12px;
+  color: #999;
+}
+
+.modadmin_list > .item > .right {
+  width: 60px;
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.modadmin_list > .item > .right > .count {
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  font-size: 16px;
+  background: #fe4500;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+
+.modadmin_list > .item > .right > .count[data-val]:after {
+  content: attr(data-val);
+}
+
+.modadmin_list > .item > .right > .count[data-val="0"] {
+  display: none;
+}

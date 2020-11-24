@@ -1,0 +1,7 @@
+.emoji {
+  font-size: x-large;
+  transition: 0.2s all;
+}
+.emoji:hover {
+  font-size: x-large;
+}

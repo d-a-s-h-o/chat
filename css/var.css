@@ -1,0 +1,41 @@
+:root {
+  /* Global */
+  --pri-col1: #121525;
+  --pri-col2: #1a1e23;
+  --sec-col1: #000000;
+  --sec-col2: #00bfff;
+  --font: arial;
+  --theme: dark;
+  --accent-halloween: #d68d20;
+  --accent-temp: #b4b0b0;
+  --accent: #2ECC71;
+  --accent2: #1a1e23;
+  --onion: #59316b;
+  --onion-hover: #59316b80;
+  --red: #f90921;
+  --red-hover: #f9092180;
+  --button-text-col: #ddd;
+  --tip: #121525;
+
+  /* Chat Depth Levels */
+  --lv3-col: #000000; /* Deepest Level */
+  --lv2-col: #121416; /* Middle Level */
+  --lv1-col: var(--accent2); /* Shallowest Level */
+
+  /* Login Info */
+  --lg-tx: #121525;
+  --lg-hr: #121525 ;
+  --lg-bg: #005174;
+  --nav-bg: #121525;
+  --card-bg: #fefefe;
+
+  /* Messages */
+  --color-msg-small: var(--accent);
+  --color-msg-sys: #0c1a2b;
+
+  /* Badges */
+  --sa-col: #FECE5E;
+  --a-col: #EE2C39;
+  --rg-col: #3CB54A;
+  --boom-col: #222222;
+}

@@ -1,0 +1,48 @@
+.rank {
+  display: inline-block;
+  background: none;
+  background-size: contain;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  transition: 0.3s all;
+  z-index: 15;
+  vertical-align: baseline;
+  background-repeat: no-repeat;
+}
+
+.rank:hover {
+  margin-left: -30px;
+  margin-top: -30px;
+  height: 75px;
+  width: 75px;
+  z-index: 50;
+}
+
+.rank.boom {
+  background-image: url("../rank/boom.png");
+}
+.rank.sa {
+  background-image: url("../rank/sadm.png");
+}
+.rank.a {
+  background-image: url("../rank/radm.png");
+}
+.rank.sm {
+  background-image: url("../rank/smod.png");
+}
+.rank.mod {
+  background-image: url("../rank/rmod.png");
+}
+.rank.m {
+  background-image: url("../rank/smem.png");
+}
+.rank.ra {
+  background-image: url("../rank/jmem.png");
+}
+.rank.g {
+  background-image: url("../rank/gues.png");
+}
+bdi.spacer {
+  margin-left: 17px;
+}

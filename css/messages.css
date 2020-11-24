@@ -1,0 +1,84 @@
+.msg {
+  padding: 0.5em 0.5em;
+  background-color: var(--lv2-col);
+  border: solid var(--lv3-col);
+  width: 77%;
+  margin-left: 1em;
+  margin-right: 2em;
+}
+
+.msglink{
+  text-decoration: none;
+}
+
+.msglink:hover{
+  text-decoration: underline var(--accent);
+}
+
+#messages small {
+  color: #989898;
+}
+.messages #topic {
+  font-weight: bold;
+  padding: 1em;
+  color: #091e23;
+  text-shadow: -0.5px -0.5px 0 var(--accent), 0.5px -0.5px 0 var(--accent),
+    -0.5px 0.5px 0 var(--accent), 0.5px 0.5px 0 var(--accent);
+}
+
+.messages #topic,
+#notifications {
+  display: block;
+  width: 60%;
+}
+
+.messages {
+  background-color: var(--lv3-col);
+}
+
+.msg small {
+  color: var(--color-msg-small) !important;
+}
+
+.msg .sysmsg {
+  display: inline-block;
+  background-color: var(--accent2);
+  padding: 0.5em;
+  width: max-content;
+  color: var(--accent) !important;
+}
+
+a#bottom_link {
+  color: var(--accent);
+  text-decoration: underline dotted;
+  overflow: hidden;
+}
+
+a#top_link {
+  color: var(--accent);
+  text-decoration: underline dotted;
+  overflow: hidden;
+}
+
+.pinned.item {
+  background-color: var(--accent);
+  background-image: url(../images/sticky.png);
+  background-size: 70% 70%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 18px;
+  width: 18px;
+  padding: 0;
+}
+
+.pinned {
+  color: #000;
+  display: inline-block;
+  font-size: 12px;
+  vertical-align: middle;
+  margin-left: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-weight: normal;
+}

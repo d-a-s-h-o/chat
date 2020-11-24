@@ -1,0 +1,84 @@
+.api-page {
+  display: block;
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 30px 20px;
+}
+
+.api-page > .p-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #000;
+  text-align: left;
+}
+
+.api-page > .list {
+  width: 100%;
+  font-size: 0;
+}
+
+.api-page > .list > .item {
+  display: block;
+  padding: 15px;
+  background: #fff;
+  font-size: 0;
+}
+
+.api-page > .list > .item:nth-child(even) {
+  background: #efefed;
+}
+
+.api-page > .list > .item > .left {
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(100% - 100px);
+  padding-right: 20px;
+}
+
+.api-page > .list > .item > .left > .icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  background-color: #ccc;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.api-page > .list > .item > .left > .details {
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(100% - 65px);
+  font-size: 14px;
+}
+
+.api-page > .list > .item > .left > .details > .title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.api-page > .list > .item > .left > .details > .description {
+  margin-bottom: 5px;
+}
+
+.api-page > .list > .item > .left > .details > .version {
+  color: #999;
+  font-size: 12px;
+}
+
+.api-page > .list > .item > .right {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 5px;
+  width: 100px;
+}
+
+.api-page > .list > .item > .right > a.standardBtn {
+  width: 100%;
+  display: block;
+  margin: 0;
+}

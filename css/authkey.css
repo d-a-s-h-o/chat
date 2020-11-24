@@ -1,0 +1,172 @@
+.auth_key_window {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.auth_key_window > .head_text {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.auth_key_window > .key_wrap {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid transparent;
+  font-size: 0;
+  max-width: 380px;
+  margin: 0 auto 20px auto;
+  overflow: hidden;
+}
+
+.auth_key_window > .key_wrap:hover {
+  border-color: #9b59b6;
+}
+
+.auth_key_window > .key_wrap > .output {
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 20px;
+  animation: timer-expire 1s 1;
+  animation-fill-mode: forwards;
+  animation-delay: 60s;
+  background: #efefed;
+  width: calc(100% - 100px);
+}
+
+.auth_key_window > .key_wrap > .expire {
+  display: inline-block;
+  vertical-align: top;
+  width: 100px;
+  height: 50px;
+  position: relative;
+  background: #888;
+  animation: timer-warning 1s 1;
+  animation-fill-mode: forwards;
+  animation-delay: 50s;
+}
+
+.auth_key_window > .key_wrap > .expire > .timer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  overflow: hidden;
+}
+
+.auth_key_window > .key_wrap > .expire > .timer > .time-part-wrapper {
+  display: inline-block;
+  vertical-align: top;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+}
+
+.auth_key_window
+  > .key_wrap
+  > .expire
+  > .timer
+  > .time-part-wrapper:first-child:after {
+  content: ":";
+  display: inline-block;
+  vertical-align: top;
+  width: 15px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.auth_key_window
+  > .key_wrap
+  > .expire
+  > .timer
+  > .time-part-wrapper
+  > .time-part {
+  display: inline-block;
+  vertical-align: top;
+  width: 15px;
+  position: relative;
+}
+
+.auth_key_window
+  > .key_wrap
+  > .expire
+  > .timer
+  > .time-part-wrapper
+  > .time-part
+  > .digit-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  text-align: center;
+}
+
+.auth_key_window
+  > .key_wrap
+  > .expire
+  > .timer
+  > .time-part-wrapper
+  > .time-part
+  > .digit-wrapper
+  > .digit {
+  display: block;
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  font-size: 22px;
+}
+
+.auth_key_window
+  > .key_wrap
+  > .expire
+  > .timer
+  > .time-part-wrapper
+  > .time-part.seconds.tens
+  > .digit-wrapper {
+  top: -50px;
+  animation: timer-seconds-tens 50s 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+.auth_key_window
+  > .key_wrap
+  > .expire
+  > .timer
+  > .time-part-wrapper
+  > .time-part.seconds.ones
+  > .digit-wrapper {
+  animation: timer-seconds-ones 10s 6;
+}
+
+.auth_key_window
+  > .key_wrap
+  > .expire
+  > .timer
+  > .time-part-wrapper
+  > .time-part.hundredths.tens
+  > .digit-wrapper {
+  animation: timer-seconds-ones 1s 60;
+}
+
+.auth_key_window
+  > .key_wrap
+  > .expire
+  > .timer
+  > .time-part-wrapper
+  > .time-part.hundredths.ones
+  > .digit-wrapper {
+  animation: timer-seconds-ones 500ms 120;
+}

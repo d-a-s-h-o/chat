@@ -1,0 +1,183 @@
+form.std {
+  display: block;
+  width: 100%;
+  font-size: 0;
+  padding: 20px 0;
+}
+
+form.std.auth {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+form.std > small {
+  font-size: 10px;
+  color: #ccc;
+  margin-bottom: 15px;
+  display: block;
+}
+
+form.std label {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+form.std input[type="text"],
+form.std select,
+form.std textarea,
+form.std input[type="number"],
+form.std input[type="password"] {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 0 15px;
+  height: 40px;
+  line-height: 40px;
+  color: #000;
+  font-size: 16px;
+  font-family: roboto, helvetica, arial, tahoma, verdana;
+}
+
+form.std input[type="text"]:focus,
+form.std input[type="text"]:active,
+form.std select:focus,
+form.std select:active,
+form.std textarea:focus,
+form.std textarea:active,
+form.std input[type="number"]:focus,
+form.std input[type="number"]:active,
+form.std input[type="password"]:focus,
+form.std input[type="password"]:active {
+  border-color: #9b59b6;
+}
+
+form.std input[type="number"] {
+  padding-right: 0;
+}
+
+form.std textarea {
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  line-height: 20px;
+  padding: 15px;
+  min-height: 250px;
+}
+
+form.std > .spacer {
+  display: block;
+  height: 20px;
+}
+
+form.std .inline-field {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(50% - 10px);
+  margin-right: 10px;
+}
+
+form.std .inline-field:nth-child(2n + 2) {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+form.std .inline-field.lg {
+  display: block;
+  width: 100%;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+form.std .inline-field > input[type="file"] {
+  margin-bottom: 10px;
+}
+
+form.std .inline-field > small {
+  color: #999;
+  font-size: 12px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1000px) {
+  form.std .inline-field {
+    display: block;
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+form.std .buttons {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+form.std .buttons > button {
+  margin-right: 20px;
+}
+
+form.std .buttons > a {
+  display: inline-block;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+form.invite_pop {
+  margin-top: 15px;
+}
+
+form.invite_pop .standardBtn {
+  margin: 0 5px;
+}
+
+form.chatroom-form {
+  display: block;
+  width: 100%;
+  background: #efefef;
+  height: 60px;
+  padding: 15px 5px;
+  font-size: 0;
+}
+
+form.chatroom-form > input[type="text"] {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 145px);
+  height: 40px;
+  border-radius: 3px 0 0 3px;
+  border: 1px solid #efefef;
+  padding: 10px;
+  font-size: 14px;
+  border-right: none;
+  background: #fff;
+}
+
+form.chatroom-form > input[type="text"]:active,
+form.chatroom-form > input[type="text"]:focus {
+  border-color: #9b59b6;
+}
+
+form.chatroom-form > .standardBtn {
+  display: inline-block;
+  vertical-align: top;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+form.chatroom-form > .mute-btn {
+  display: inline-block;
+  vertical-align: top;
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  background: #e74c3c;
+  margin-left: 5px;
+  position: relative;
+}

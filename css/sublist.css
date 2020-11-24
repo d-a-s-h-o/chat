@@ -1,0 +1,140 @@
+.sub-list-full {
+  display: block;
+  width: 100%;
+  font-size: 0;
+}
+
+.sub-list-full > .item {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(50% - 5px);
+  font-size: 0;
+  margin-bottom: 15px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.sub-list-full > .item:nth-child(even) {
+  margin-right: 0;
+}
+
+.sub-list-full > .item > .icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  height: 60px;
+  background-color: #9b59b6;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-right: 15px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  text-decoration: none;
+}
+
+.sub-list-full > .item > .right {
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(100% - 75px);
+  font-size: 14px;
+}
+
+.sub-list-full > .item > .right > .subname {
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.sub-list-full > .item > .right > .subscribers {
+  color: #999;
+}
+
+.sub-list-full > .item > .right > .description {
+  font-size: 16px;
+  color: #666;
+  margin-top: 5px;
+  height: 18px;
+  line-height: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.sub-list {
+  display: block;
+  width: 100%;
+  font-size: 0;
+}
+
+.sub-list > .item {
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  font-size: 0;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  text-align: left;
+}
+
+.sub-list > .item > .icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  background-color: #9b59b6;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+
+.sub-list > .item > .icon.is_mod {
+  position: relative;
+}
+
+.sub-list > .item > .icon.is_mod:after {
+  position: absolute;
+  bottom: -3px;
+  right: -3px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
+  background-color: #2ecc71;
+  content: "M";
+  text-align: center;
+  line-height: 20px;
+  -webkit-border-radius: 3px;
+  font-size: 12px;
+  color: #fff;
+}
+
+.sub-list > .item > .right {
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(100% - 50px);
+  font-size: 14px;
+}
+
+.sub-list > .item > .right > .subname {
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.sub-list > .item > .right > .subscribers {
+  color: #999;
+}

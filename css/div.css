@@ -1,0 +1,142 @@
+.odiv {
+  background-color: var(--lg-bg);
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+  max-height: 100%;
+  z-index: -888;
+}
+
+.odiv {
+  height: 100%;
+}
+
+.idiv {
+  display: none;
+}
+
+.idivs1 {
+  display: none;
+  height: 26px;
+}
+
+.idivs2 {
+  display: none;
+  height: 52px;
+}
+
+.idivc {
+  display: inline-block;
+  text-align: left;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 8px -1px rgba(0, 0, 0, 0.19);
+  background-color: var(--card-bg) !important;
+  border-radius: 8px;
+  padding: 0.01em 16px;
+  left: 0;
+  right: 0;
+  margin-top: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  width: 66.6666%;
+  z-index: -799;
+}
+
+.idiv:target {
+  width: 100vw;
+  text-align: center;
+  color: var(--lg-tx) !important;
+  position: absolute;
+  margin-top: -24px;
+  margin-left: calc(100vw - 100%);
+  margin-right: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: var(--lg-bg);
+  z-index: -600;
+  min-height: 93vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.idiv:target .idivc {
+  z-index: -520;
+  width: 66.6666%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.idiv:target .idivs1 {
+  display: block;
+}
+
+.idiv:target .idivs2 {
+  display: block;
+}
+
+.odiv:target {
+  background-color: white;
+  z-index: -880;
+}
+
+.odiv:target .idiv {
+  text-align: center;
+  display: block;
+  color: #000 !important;
+  z-index: -888;
+  padding: 0.01em 16px;
+  margin-top: -76px;
+  margin-left: calc(100vw - 100%);
+  margin-right: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.header {
+  display: none;
+}
+
+.odiv:target .header {
+  display: block;
+  padding-top: 32px !important;
+  padding-bottom: 80px !important;
+  text-align: center !important;
+  margin-left: calc(100vw - 100%);
+  margin-right: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.idivc a:link {
+  color: #005174;
+}
+.idivc a:visited {
+  color: #87799f;
+}
+.idivc a:hover {
+  color: #121525;
+  text-decoration: none;
+}
+
+.odiv:target .splash {
+  display: none;
+}
+
+.odiv:target .prev {
+  display: none;
+}
+
+.odiv:target .next {
+  display: none;
+}
+
+.odiv:target .prev-beg {
+  display: none;
+}
+
+.odiv:target .next-end {
+  display: none;
+}

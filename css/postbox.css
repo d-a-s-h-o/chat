@@ -1,0 +1,181 @@
+.post {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  background-color: var(--lv1-col);
+  background-size: cover;
+}
+
+/* First Line */
+.post input[name="message"],
+.post textarea[name="message"] {
+  background-color: var(--lv2-col);
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  text-align: left;
+  max-width: 100%;
+  padding: 0.3em;
+}
+
+.post input[value="Send to"] {
+  all: unset;
+  padding: 0.3em;
+  text-align: left;
+  color: var(--accent);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.post input[value="Send to"]:hover {
+  all: unset;
+  background-color: var(--accent);
+  color: var(--accent2);
+  padding: 0.3em;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.post select[name="sendto"] {
+  background-color: var(--accent);
+  color: var(--accent2);
+  padding: 0.3em;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}
+
+.post select[name="sendto"]:hover {
+  padding: 0.3em;
+  text-align: left;
+  color: var(--accent);
+  background-color: var(--accent2);
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}
+
+
+/*Second Line*/
+.post input[name="file"] {
+  background-color: var(--accent2);
+  color: var(--button-text-col);
+  padding: 0.1em;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}
+
+.post input[name="file"]:hover {
+  padding: 0.1em;
+  text-align: left;
+  color: var(--accent2);
+  background-color: var(--accent);
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid var(--accent2);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}
+
+.post #secondline small {
+  padding: 0.1em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.post #secondline label {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+
+/*Del Messages*/
+.delbutton {
+  background-color: var(--accent2);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ddd;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--button-text-col);
+  transition: background-color, color, 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.delbutton:hover {
+  background-color: var(--red);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ffffff;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: #ffffff;
+}
+
+.backbutton {
+  background-color: var(--accent2);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ddd;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--button-text-col);
+  transition: background-color, color, 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.backbutton:hover {
+  background-color: var(--accent);
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #ffffff;
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--accent2);
+}
+
+/* Singl/Multi Line */
+.post input[value="Switch to single-line"] {
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--lv2-col);
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--button-text-col);
+  transition: background-color, color, 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.post input[value="Switch to multi-line"] {
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--lv2-col);
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--button-text-col);
+  transition: background-color, color, 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.post input[value="Switch to single-line"]:hover {
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--lv3-col);
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--button-text-col);
+}
+
+.post input[value="Switch to multi-line"]:hover {
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--lv3-col);
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--button-text-col);
+}
