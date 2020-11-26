@@ -2,7 +2,7 @@
 # [ChatterBox](https://chatterbox.tk)
 
  - [Intro](https://github.com/thenullnetwork/chatterbox#weco)
- - [Install]()
+ - [Install](https://github.com/thenullnetwork/chatterbox#installationsetup)
  - [About](https://github.com/thenullnetwork/chatterbox#about-information_source)
  - [Membership](https://github.com/thenullnetwork/chatterbox#membership-beginner)
  - [Licence](https://github.com/thenullnetwork/chatterbox#licence-copyright)
