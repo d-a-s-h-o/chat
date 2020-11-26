@@ -1,12 +1,12 @@
 
 # [ChatterBox](https://chatterbox.tk)
 
- - [Intro](https://github.com/thenullnetwork/chatterbox#weco)
- - [Install](https://github.com/thenullnetwork/chatterbox#installationsetup)
- - [About](https://github.com/thenullnetwork/chatterbox#about-information_source)
- - [Membership](https://github.com/thenullnetwork/chatterbox#membership-beginner)
- - [Licence](https://github.com/thenullnetwork/chatterbox#licence-copyright)
- - [Brief of The Project & Team](https://github.com/thenullnetwork/chatterbox#brief-of-the-project--team)
+ - [Intro](#weco)
+ - [Install](#installationsetup)
+ - [About](#about-information_source)
+ - [Membership](#membership-beginner)
+ - [Licence](#licence-copyright)
+ - [Brief of The Project & Team](#brief-of-the-project--team)
  
 ---
 <span id="weco"></span>
