@@ -9,7 +9,8 @@
  - [Brief of The Project & Team](https://github.com/thenullnetwork/chatterbox#brief-of-the-project--team)
  
 ---
-<span id="weco"></span>![Welcome to ChatterBox](https://chatterbox.tk/pngs/weco.png)
+<span id="weco"></span>
+![Welcome to ChatterBox](https://chatterbox.tk/pngs/weco.png)
 ---
 
 Hey there! This is the chatterbox repository, and this is the README file. Consider supporting our work by visiting and adding to the fun!
