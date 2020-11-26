@@ -9,9 +9,9 @@
  - [Brief of The Project & Team](#brief-of-the-project--team)
  
 ---
-<div id="weco">
+<div id="weco">&nbsp;</div>
+
 ![Welcome to ChatterBox](https://chatterbox.tk/pngs/weco.png)
-</div>
 ---
 
 Hey there! This is the chatterbox repository, and this is the README file. Consider supporting our work by visiting and adding to the fun!
