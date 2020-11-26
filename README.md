@@ -1,7 +1,15 @@
 
 # [ChatterBox](https://chatterbox.tk)
 
-![Welcome to ChatterBox](https://chatterbox.tk/pngs/weco.png)
+ - [Intro](https://github.com/thenullnetwork/chatterbox#weco)
+ - [Install]()
+ - [About](https://github.com/thenullnetwork/chatterbox#about-information_source)
+ - [Membership](https://github.com/thenullnetwork/chatterbox#membership-beginner)
+ - [Licence](https://github.com/thenullnetwork/chatterbox#licence-copyright)
+ - [Brief of The Project & Team](https://github.com/thenullnetwork/chatterbox#brief-of-the-project--team)
+ 
+---
+<span id="weco"></span>![Welcome to ChatterBox](https://chatterbox.tk/pngs/weco.png)
 ---
 
 Hey there! This is the chatterbox repository, and this is the README file. Consider supporting our work by visiting and adding to the fun!
@@ -9,6 +17,18 @@ Hey there! This is the chatterbox repository, and this is the README file. Consi
 >**Disclaimer**: ChatterBox is available on (and designed for) Tor. It has a [v3 onion service](http://cboxkuuxrtulkkxhod2pxo3la25tztcp4cdjmc75wc5airqqliq2srad.onion/) which can only be accessed through the Tor Browser (or a tor configured browser/system), as well as a [clearnet url](https://chatterbox.tk/) which you can use on any browser.
 >
 >:warning: As such, there might occasionaly be questionable contributions made on the chat. We do not tolerate some and remove them as soon as possible. If you come accross material that offends or upsets you, do not panic. Just close it, wipe your browser cache (nothing google can't help you with), and continue like nothing happened. :warning:
+
+## Installation/Setup
+You'll need to have php with pdo, pcre, mbstring and date extension, and a web-server installed. You will also need the pdo_sqlite, pdo_mysql or pdo_pgsql extension, depending on which database you choose. Optionally, you can install:
+ - the gd extension for the captcha feature
+ - the json extension for save/restore
+ - a memcached server and the memcached extension and change the configuration to use memcached. This will lessen the database load a bit.
+ - a MySQL or PostgreSQL server to use as an external database instead of SQLite
+ - the libsodium extension (PHP >= 7.2) for encryption of messages and notes in the database
+ 
+When you have everything installed and use MySQL or PostgreSQL, you'll have to create a database and a user for the chat. Then edit the configuration at the bottom of the script to reflect the appropriate database settings and to modify the chat settings the way you like them. Then copy the script to your web-server directory and call the script in your browser with a parameter like this: `http://(server)/(script-name).php?action=setup`. Now you can create the Superadmin account. With this account you can administer the chat and add new members and set the guest access. As soon as you are done with the setup, all necessary database tables will be created and the chat can be used.
+
+Note: If you updated the script, please visit `http://(server)/(script-name).php?action=setup` again, to make sure, that any database changes are applied and no errors occur.
 
 ## About :information_source:
 The ChatterBox project is part of the Curiosity Suite, developed by [@thenullnetwork](https://thenullnetwork.github.io). They manage it all through the [Do Not Know (DNK)](https://donotknow.tk) Project.
