@@ -6,9 +6,11 @@ The following versions are supported for security reports:
 
 | Version | Supported          |
 | ------- | ------------------ |
+| Nightly (v2) | :white_check_mark: |
 | Current Version (v2) | :white_check_mark: |
 | v1 (existing copies only) | :white_check_mark: |
 | v1 (Alpha & Beta) | :x: |
+| Dan's Chat | :white_check_mark: |
 
 ## Reporting a Vulnerability
 
