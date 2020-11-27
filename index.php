@@ -8,7 +8,7 @@ $L=[];// Languages
 $U=[];// This user data
 $db;// Database connection
 $memcached;// Memcached connection
-$language;// user selected language
+$language = LANG;// user selected language
 $styles = []; //css styles
 $session = $_REQUEST['session'] ?? ''; //requested session
 include('admined.php');
@@ -1070,7 +1070,7 @@ function send_sa_password_reset(){
 	print_end();
 }
 
-function send_admin(string $arg){
+function send_admin(string $arg=''){
 	global $I, $U, $db;
 	$ga=(int) get_setting('guestaccess');
 	print_start('admin');
@@ -5018,7 +5018,7 @@ function preview_chat(){
 function load_config(){
 	mb_internal_encoding('UTF-8');
 	define('VERSION', '1.23.6'); // Script version
-	define('DBVERSION', 43); // Database layout version
+	define('DBVERSION', 42); // Database layout version
 	define('MSGENCRYPTED', false); // Store messages encrypted in the database to prevent other database users from reading them - true/false - visit the setup page after editing!
 	define('ENCRYPTKEY', ''); // Encryption key for messages
 	define('DBHOST', 'localhost'); // Database host
