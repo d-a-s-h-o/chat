@@ -8,7 +8,7 @@ $L=[];// Languages
 $U=[];// This user data
 $db;// Database connection
 $memcached;// Memcached connection
-$language = LANG;// user selected language
+$language;// user selected language
 $styles = []; //css styles
 $session = $_REQUEST['session'] ?? ''; //requested session
 include('admined.php');
@@ -4890,7 +4890,6 @@ function check_db(){
 				}else{
 					send_fatal_error($I['nodbsetup']);
 				}
-
 			}elseif(DBDRIVER===1){
 				$db=new PDO('pgsql:host=' . DBHOST, DBUSER, DBPASS, $options);
 				if(false!==$db->exec('CREATE DATABASE ' . DBNAME)){
@@ -5001,9 +5000,7 @@ function preview_chat(){
 	echo '<hr>';
 	echo '<div class="messages">';
 	echo '<div id="messages">';
-
-	$stmt=$db->prepare('SELECT postdate, id, text FROM ' . PREFIX . 'messages WHERE '.
-	"poststatus=? AND delstatus=? AND postdate>? ORDER BY id ASC;");
+	$stmt=$db->prepare('SELECT postdate, id, text FROM ' . PREFIX . 'messages WHERE '."poststatus=? AND delstatus=? AND postdate>? ORDER BY id ASC;");
 	$stmt->execute([1, 1, 0]);
 	while($message=$stmt->fetch(PDO::FETCH_ASSOC)){
 		prepare_message_print($message, $removeEmbed);
