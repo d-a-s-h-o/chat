@@ -297,10 +297,10 @@ function route_setup(){
 	if(!valid_admin()){
 		send_alogin();
 	}
-	$C['bool_settings']=['suguests', 'imgembed', 'timestamps', 'trackip', 'memkick', 'forceredirect', 'incognito', 'sendmail', 'modfallback', 'disablepm', 'eninbox', 'enablegreeting', 'sortupdown', 'hidechatters', 'enfileupload', 'personalnotes', 'filtermodkick', 'frameset', 'randnick', 'colorsel', 'previewchat', 'sharedpm', 'showtopic', 'showrule', 'showlang', 'showrank'];
+	$C['bool_settings']=['suguests', 'imgembed', 'timestamps', 'trackip', 'memkick', 'forceredirect', 'incognito', 'sendmail', 'modfallback', 'disablepm', 'eninbox', 'enablegreeting', 'sortupdown', 'hidechatters', 'personalnotes', 'filtermodkick', 'frameset', 'randnick', 'colorsel', 'previewchat', 'sharedpm', 'showtopic', 'showrule', 'showlang', 'showrank'];
 	$C['colour_settings']=['colbg', 'coltxt'];
 	$C['msg_settings']=['msgenter', 'msgexit', 'msgmemreg', 'msgsureg', 'msgkick', 'msgmultikick', 'msgallkick', 'msgclean', 'msgsendall', 'msgsendrg', 'msgsendmem', 'msgsendmod', 'msgsendadm', 'msgsendsa', 'msgsendprv', 'msgattache'];
-	$C['number_settings']=['memberexpire', 'guestexpire', 'kickpenalty', 'entrywait', 'captchatime', 'messageexpire', 'messagelimit', 'maxmessage', 'maxname', 'minpass', 'defaultrefresh', 'numnotes', 'maxuploadsize'];
+	$C['number_settings']=['memberexpire', 'guestexpire', 'kickpenalty', 'entrywait', 'captchatime', 'messageexpire', 'messagelimit', 'maxmessage', 'maxname', 'minpass', 'defaultrefresh', 'numnotes', 'maxuploadsize', 'enfileupload'];
 	$C['textarea_settings']=['rulestxt', 'css', 'disabletext'];
 	$C['text_settings']=['dateformat', 'captchachars', 'redirect', 'chatname', 'mailsender', 'mailreceiver', 'nickregex', 'passregex', 'externalcss', 'metadescription'];
 	$C['settings']=array_merge(['guestaccess', 'englobalpass', 'globalpass', 'captcha', 'dismemcaptcha', 'topic', 'guestreg', 'defaulttz'], $C['bool_settings'], $C['colour_settings'], $C['msg_settings'], $C['number_settings'], $C['textarea_settings'], $C['text_settings']); // All settings in the database
@@ -621,7 +621,7 @@ function send_captcha(){
 	imagegif($im);
 	imagedestroy($im);
 	echo base64_encode(ob_get_clean()).'">';
-	echo '</td><td>'.hidden('challenge', $randid).'<input type="text" name="captcha" size="15" autocomplete="off"></td></tr>';
+	echo '</td><td>'.hidden('challenge', $randid).'<input type="text" name="captcha" size="15" autocomplete="off" required></td></tr>';
 }
 
 function send_setup(array $C){
@@ -2208,7 +2208,7 @@ function send_post(string $rejected=''){
 	}
 	echo '</select></td>';
 	echo '</tr></table><table><tr id="secondline">';
-	if(get_setting('enfileupload')){
+	if(get_setting('enfileupload')>0 && get_setting('enfileupload')<=$U['status']){
 		printf("<td><input type=\"file\" name=\"file\"><small>&nbsp;$I[maxsize]</small></td>", get_setting('maxuploadsize'));
 	}
 	if(!$disablepm && ($U['status']>=5 || ($U['status']>=3 && get_count_mods()==0 && get_setting('memkick')))){
@@ -3577,7 +3577,7 @@ function validate_input() : string {
 	$message=apply_filter($message, $poststatus, $U['nickname']);
 	$message=create_hotlinks($message);
 	$message=apply_linkfilter($message);
-	if(isset($_FILES['file']) && get_setting('enfileupload')){
+	if(isset($_FILES['file']) && get_setting('enfileupload')>0 && get_setting('enfileupload')<=$U['status']){
 		if($_FILES['file']['error']===UPLOAD_ERR_OK && $_FILES['file']['size']<=(1024*get_setting('maxuploadsize'))){
 			$hash=sha1_file($_FILES['file']['tmp_name']);
 			$name=htmlspecialchars($_FILES['file']['name']);
