@@ -338,7 +338,7 @@ $I=[
 	'eninadmin' => 'For admins only',
 	'nickregex' => 'Nickname regex',
 	'passregex' => 'Password regex',
-	'externalcss' => 'Link to external CSS file',
+	'externalcss' => 'Link to external CSS file (on your own server)',
 	'greetingmsg' => 'Welcome %s!',
 	'entryhelp' => 'If this frame does not reload in %d seconds, you\'ll have to enable automatic redirection (meta refresh) in your browser. Also make sure no web filter, local proxy tool or browser plugin is preventing automatic refreshing! This could be for example "Polipo", "NoScript", etc.<br>As a workaround (or in case of server/proxy reload errors) you can always use the buttons at the bottom to refresh manually.',
 	'enablegreeting' => 'Show a greeting message before showing the messages',
@@ -384,5 +384,12 @@ $I=[
 	'enforceremail' => 'Enforcer:',
 	'slowmoeemail' => 'SlowMoe:',
 	'jacksparrowemail' => 'JackSparrow:',
+	'forgotlogin' => 'Forgot login?',
+	'resetinstruction' => 'Please modify the script and put the following at the bottom of it (change the password). Then refresh this page: define(\'RESET_SUPERADMIN_PASSWORD\', \'changeme\');',
+	'resetpassword' => 'Reset password',
+	'resetsucc' => 'Successfully reset password for username %s. Please remove the password reset define from the script again.',
+	'backtosetup' => 'Back to setup',
+	'defaultmetadescription' => 'A chat community',
+	'metadescription' => 'Meta description (best 50 - 160 characters for SEO)',
 ];
 
