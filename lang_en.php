@@ -384,5 +384,7 @@ $I=[
 	'enforceremail' => 'Enforcer:',
 	'slowmoeemail' => 'SlowMoe:',
 	'jacksparrowemail' => 'JackSparrow:',
+	'viewpublicnotes' => 'View public notes',
+	'publicnotes' => 'Public notes',
 ];
 

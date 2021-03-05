@@ -131,14 +131,19 @@ function route(){
 			send_notes(5);
 		}elseif(isset($_REQUEST['do']) && $_REQUEST['do']==='member' && $U['status']>=3){
 			send_notes(3);
+		}elseif(isset($_REQUEST['do']) && $_REQUEST['do']==='public'){
+			send_notes(1);
 		}
-		if($U['status']<3 || !get_setting('personalnotes')){
+		if($U['status']<1 || (!get_setting('personalnotes') && !get_setting('publicnotes'))){
 			send_access_denied();
 		}
 		send_notes(0);
 	}elseif($_REQUEST['action']==='help'){
 		check_session();
 		send_help();
+	}elseif($_REQUEST['action']==='viewpublicnotes'){
+		check_session();
+		view_publicnotes();
 	}elseif($_REQUEST['action']==='emails'){
 		check_session();
 		send_emails();
@@ -291,7 +296,7 @@ function route_setup(){
 	if(!valid_admin()){
 		send_alogin();
 	}
-	$C['bool_settings']=['suguests', 'imgembed', 'timestamps', 'trackip', 'memkick', 'forceredirect', 'incognito', 'sendmail', 'modfallback', 'disablepm', 'eninbox', 'enablegreeting', 'sortupdown', 'hidechatters', 'enfileupload', 'personalnotes', 'filtermodkick', 'frameset', 'randnick', 'colorsel', 'previewchat', 'sharedpm', 'showtopic', 'showrule', 'showlang', 'showrank'];
+	$C['bool_settings']=['suguests', 'imgembed', 'timestamps', 'trackip', 'memkick', 'forceredirect', 'incognito', 'sendmail', 'modfallback', 'disablepm', 'eninbox', 'enablegreeting', 'sortupdown', 'hidechatters', 'enfileupload', 'personalnotes', 'publicnotes', 'filtermodkick', 'frameset', 'randnick', 'colorsel', 'previewchat', 'sharedpm', 'showtopic', 'showrule', 'showlang', 'showrank'];
 	$C['colour_settings']=['colbg', 'coltxt'];
 	$C['msg_settings']=['msgenter', 'msgexit', 'msgmemreg', 'msgsureg', 'msgkick', 'msgmultikick', 'msgallkick', 'msgclean', 'msgsendall', 'msgsendrg', 'msgsendmem', 'msgsendmod', 'msgsendadm', 'msgsendsa', 'msgsendprv', 'msgattache'];
 	$C['number_settings']=['memberexpire', 'guestexpire', 'kickpenalty', 'entrywait', 'captchatime', 'messageexpire', 'messagelimit', 'maxmessage', 'maxname', 'minpass', 'defaultrefresh', 'numnotes', 'maxuploadsize'];
@@ -865,6 +870,8 @@ function restore_backup($C){
 				$note['type']=5;
 			}elseif($note['type']==='member'){
 				$note['type']=3;
+			}elseif($note['type']==='public'){
+				$note['type']=1;
 			}
 			if(MSGENCRYPTED){
 				$note['text']=openssl_encrypt($note['text'], 'aes-256-cbc', ENCRYPTKEY, 0, '1234567890123456');
@@ -1860,7 +1867,8 @@ function send_notes($type){
 	global $I, $U, $db;
 	print_start('notes');
 	$personalnotes=(bool) get_setting('personalnotes');
-	if($U['status']>=3 && ($personalnotes || $U['status']>6)){
+	$publicnotes=(bool) get_setting('publicnotes');
+	if($U['status']>=1 && ($personalnotes || $publicnotes)){
 		echo '<table><tr>';
 		if($U['status']>6){
 			echo '<td>'.form('notes', 'admin').submit($I['admnotes']).'</form></td>';
@@ -1868,9 +1876,14 @@ function send_notes($type){
 		if($U['status']>4){
 			echo '<td>'.form('notes', 'staff').submit($I['staffnotes']).'</form></td>';
 		}
-		echo '<td>'.form('notes', 'member').submit($I['memnotes']).'</form></td>';
+		if($U['status']>=3){
+			echo '<td>'.form('notes', 'member').submit($I['memnotes']).'</form></td>';
+		}
 		if($personalnotes){
 			echo '<td>'.form('notes').submit($I['personalnotes']).'</form></td>';
+		}
+		if($publicnotes){
+			echo '<td>'.form_target('view', 'notes', 'public').submit($I['publicnotes']).'</form></td>';
 		}
 		echo '</tr></table>';
 	}
@@ -1883,10 +1896,12 @@ function send_notes($type){
 	}elseif($type===7){
 		echo "<h2>$I[adminnotes]</h2><p>";
 		$hiddendo=hidden('do', 'admin');
-	}else{
+	}elseif($type===0){
 		echo "<h2>$I[personalnotes]</h2><p>";
 		$hiddendo='';
-	}
+	}elseif($type===1){
+		echo "<h2>$I[publicnotes]</h2><p>";
+		$hiddendo=hidden('do', 'public');
 	if(isset($_REQUEST['text'])){
 		if(MSGENCRYPTED){
 			$_REQUEST['text']=openssl_encrypt($_REQUEST['text'], 'aes-256-cbc', ENCRYPTKEY, 0, '1234567890123456');
@@ -1945,6 +1960,25 @@ function send_notes($type){
 	echo '<td>'.form('profile').submit($I['backtoprofile'], ' class="backbutton"').'</form></td>';
 	echo '<td>'.form('view').submit($I['backtochat'], 'class="backbutton"').'</form></td>';
 	echo '</tr></table>';
+	print_end();
+}
+
+function view_publicnotes() {
+	global $I, $db;
+	$dateformat=get_setting('dateformat');
+	print_start('publicnotes');
+	echo "<h2>$I[publicnotes]</h2><p>";
+// SQL adapted from AdamMc331 https://stackoverflow.com/questions/27991484/using-max-within-inner-join-sql
+	$query=$db->query('SELECT pubs.* FROM notes pubs JOIN (SELECT lastedited,editedby,text,MAX(id) AS latest FROM notes WHERE type=3 GROUP BY editedby) t ON t.editedby = pubs.editedby AND t.latest = pubs.id;');
+	while($result=$query->fetch(PDO::FETCH_OBJ)){
+		if ($result->text <> "") {
+			print '<hr/>';
+			printf($I['lastedited'], htmlspecialchars($result->editedby), date($dateformat, $result->lastedited));
+			print '<br/>';
+			print '<textarea cols="80" rows="9" readonly="true">'.$result->text.'</textarea>';
+			print '<br/>';
+		}
+	}
 	print_end();
 }
 
@@ -2250,12 +2284,17 @@ function send_profile($arg=''){
 	global $I, $L, $U, $db, $language;
 	print_start('profile');
 	$personalnotes=(bool) get_setting('personalnotes');
+	$publicnotes=(bool) get_setting('publicnotes');
 	echo "<h2>$I[profile]</h2><i>$arg</i><table>";
 	if($U['status']>=3){
 		if($personalnotes){
 			thr();
 			echo '<tr><td><table id="notes"><tr><th>'.$I['notes'].'</th><td>';
 			echo form('notes');
+			echo submit($I['view']).'</form></td></tr></table></td></tr>';
+		}if($publicnotes){
+			echo '<tr><td><table id="notes"><tr><th>'.$I['viewpublicnotes'].'</th><td>';
+			echo form('viewpublicnotes');
 			echo submit($I['view']).'</form></td></tr></table></td></tr>';
 		}else{
 			thr();
@@ -2298,7 +2337,7 @@ function send_profile($arg=''){
 	}
 	echo "<tr><td><table id=\"ignore\"><tr><th>$I[ignore]</th><td>";
 	echo "<select name=\"ignore\" size=\"1\"><option value=\"\">$I[choose]</option>";
-	$stmt=$db->prepare('SELECT poster, style FROM ' . PREFIX . 'messages INNER JOIN (SELECT nickname, style FROM ' . PREFIX . 'sessions UNION SELECT nickname, style FROM ' . PREFIX . 'members) AS t ON (' .  PREFIX . 'messages.poster=t.nickname) WHERE poster!=? AND poster NOT IN (SELECT ign FROM ' . PREFIX . 'ignored WHERE ignby=?) GROUP BY poster ORDER BY LOWER(poster);');
+	$stmt=$db->prepare('SELECT poster, style FROM ' . PREFIX . 'messages INNER JOIN (SELECT nickname, style FROM ' . PREFIX . 'sessions UNION SELECT nickname, style FROM ' . PREFIX . 'members) AS t ON (' . PREFIX . 'messages.poster=t.nickname) WHERE poster!=? AND poster NOT IN (SELECT ign FROM ' . PREFIX . 'ignored WHERE ignby=?) GROUP BY poster ORDER BY LOWER(poster);');
 	$stmt->execute([$U['nickname'], $U['nickname']]);
 	while($nick=$stmt->fetch(PDO::FETCH_NUM)){
 		echo '<option value="'.htmlspecialchars($nick[0])."\" style=\"$nick[1]\">".htmlspecialchars($nick[0]).'</option>';
@@ -4183,7 +4222,7 @@ function cron(){
 	}
 	// delete old notes
 	$limit=get_setting('numnotes');
-	$db->exec('DELETE FROM ' . PREFIX . 'notes WHERE type!=0 AND id NOT IN (SELECT * FROM ( (SELECT id FROM ' . PREFIX . "notes WHERE type=7 ORDER BY id DESC LIMIT $limit) UNION (SELECT id FROM " . PREFIX . "notes WHERE type=5 ORDER BY id DESC LIMIT $limit) UNION (SELECT id FROM " . PREFIX . "notes WHERE type=3 ORDER BY id DESC LIMIT $limit) ) AS t);");
+	$db->exec('DELETE FROM ' . PREFIX . 'notes WHERE type!=0 AND type!=1 AND id NOT IN (SELECT * FROM ( (SELECT id FROM ' . PREFIX . "notes WHERE type=7 ORDER BY id DESC LIMIT $limit) UNION (SELECT id FROM " . PREFIX . "notes WHERE type=5 ORDER BY id DESC LIMIT $limit) UNION (SELECT id FROM " . PREFIX . "notes WHERE type=3 ORDER BY id DESC LIMIT $limit) ) AS t);");
 	$result=$db->query('SELECT editedby, COUNT(*) AS cnt FROM ' . PREFIX . "notes WHERE type=0 GROUP BY editedby HAVING cnt>$limit;");
 	$stmt=$db->prepare('DELETE FROM ' . PREFIX . 'notes WHERE type=0 AND editedby=? AND id NOT IN (SELECT * FROM (SELECT id FROM ' . PREFIX . "notes WHERE type=0 AND editedby=? ORDER BY id DESC LIMIT $limit) AS t);");
 	while($tmp=$result->fetch(PDO::FETCH_NUM)){
@@ -4362,6 +4401,7 @@ function init_chat(){
 			['maxuploadsize', '1024'],
 			['nextcron', '0'],
 			['personalnotes', '1'],
+			['publicnotes', '1'],
 			['shortcut', ''],
 			['frameset', '0'],
 			['randnick', '1'],
