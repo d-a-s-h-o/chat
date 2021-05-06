@@ -374,7 +374,7 @@ function print_end(){
 }
 
 function credit(){
-	return '<br><small>This is a modified version of <a target="_blank" href="https://github.com/DanWin/le-chat-php" style="color: var(--accent); text-decoration: underline dotted var(--accent);">LE CHAT-PHP - ' . VERSION . '</a> hosted by <a href="http://dnkhosterflmc6jx.onion" target="_blank" style="color: var(--accent); text-decoration: underline dotted var(--accent);">Curious Hosting</a>.</small>';
+	return '<br><small>This is a modified version of <a target="_blank" href="https://github.com/DanWin/le-chat-php" style="color: var(--accent); text-decoration: underline dotted var(--accent);">LE CHAT-PHP - ' . VERSION . '</a> hosted by <a href="http://dnkhostduos5t3k66ye52waphqx7vk23ict2viojwny354lawjn4lzqd.onion/" target="_blank" style="color: var(--accent); text-decoration: underline dotted var(--accent);">Dashed Hosting</a>.</small>';
 }
 
 function meta_html(){
@@ -2154,7 +2154,7 @@ function send_post($rejected=''){
 		}
 		echo "value=\"s £\">- $I[tosa] -</option>";
 	}
-	if($U['nickname']=='Curious'){
+	if(($U['nickname']=='Curious' || $U['nickname']=='Dasho')){
 		echo '<option ';
 		if($_REQUEST['sendto']==='s $'){
 			echo 'selected ';
@@ -2264,14 +2264,14 @@ function send_emails(){
 	print_start('emails');
 	echo "<h2>$I[emails]</h2>";
 	thr();
-	echo '<tr><td><table id="curiousemail" style="margin-left:25%;margin-right:25%;"><tr><th style="text-align:left;">'.$I['curiousemail'].'</th><td>    </td><td style="text-align:left;">curious@null.net</td></tr><tr><th style="text-align:left;"></th><td>    </td><td style="text-align:left;">curious@danwin1210.me</td></tr></table></td></tr>';
+	echo '<tr><td><table id="curiousemail" style="margin-left:25%;margin-right:25%;"><tr><th style="text-align:left;">'.$I['curiousemail'].'</th><td>    </td><td style="text-align:left;">dasho@onionz.dev</td></tr><tr><th style="text-align:left;"></th><td>    </td><td style="text-align:left;">curious@danwin1210.me</td></tr></table></td></tr>';
 	thr();
 	echo '<tr><td><table id="enforceremail" style="margin-left:25%;margin-right:25%;"><tr><th style="text-align:left;">'.$I['enforceremail'].'</th><td>    </td><td style="text-align:right;">ghostrider007@secmail.pro</td></tr></table></td></tr>';
 	thr();
 	echo '<tr><td><table id="slowmoeemail" style="margin-left:25%;margin-right:25%;"><tr><th style="text-align:left;">'.$I['slowmoeemail'].'</th><td>    </td><td style="text-align:right;">slowmoe7a22@secmail.pro</td></tr></table></td></tr>';
 	thr();
 	echo '<tr><td><table id="jacksparrowemail" style="margin-left:25%;margin-right:25%;"><tr><th style="text-align:left;">'.$I['jacksparrowemail'].'</th><td>    </td><td style="text-align:right;">vladimirputin@secmail.pro</td></tr></table></td></tr>';
-	echo '<hr><div id="backcredit"><small>Host your own unlimited tor site for free at <a href="http://dnkhosterflmc6jx.onion" target="_blank" style="color:var(--accent); text-decoration: underline dotted var(--accent);">Curious Hosting</a>.</small></div><br />';
+	echo '<hr><div id="backcredit"><small>Host your own unlimited tor site for free at <a href="http://dnkhostduos5t3k66ye52waphqx7vk23ict2viojwny354lawjn4lzqd.onion/" target="_blank" style="color:var(--accent); text-decoration: underline dotted var(--accent);">Dashed Hosting</a>.</small></div><br />';
 	echo '<table><tr style="margin-left:auto;margin-right:auto;">';
 	echo '<td">'.form('profile').submit($I['backtoprofile'], ' class="backbutton"').'</form></td></tr></table>';
 	echo '<table><tr style="margin-left:auto;margin-right:auto;">';
@@ -2618,7 +2618,7 @@ function send_login(){
 </ol></span></div>
 	<br><br>
 	</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-	<div class=\"tip\" style=\"position: fixed; bottom : 0; width: 100%\"><h4 style=\"color:white;\">CURIOUS | ENFORCER</h4></div>
+	<div class=\"tip\" style=\"position: fixed; bottom : 0; width: 100%\"><h4 style=\"color:white;\">~ Dasho ~</h4></div>
 	</div><br><br><br>
 	<div class=\"idiv\" id=\"LINKS\"><div class=\"idivs1\">&nbsp;</div>
         
@@ -2628,15 +2628,14 @@ function send_login(){
         <br>
         <h4>Important Contacts:</h4>
         <ul>
-          <li><a title=\"ghostrider007@secmail.pro\" class=\"ImContact\" href=\"mailto:ghostrider007@secmail.pro\">@Enforcer</a> - Owner</li>
-          <li><a href=\"mailto:curious@null.net\" class=\"ImContact\" title=\"curious@null.net\">@Curious</a> - Hosting person thing ..?</li>
+          <li><a href=\"mailto:dasho@onionz.dev\" class=\"ImContact\" title=\"dasho@onionz.dev\">@Dasho</a> - The Big Greatness</li>
         </ul>
 		<h4>From the owners of Chatter Box:</h4>
 		<ul style=\"list-style-type: &quot;→ &quot;\">
 		  <li><a target=\"_blank\" href=\"http://xb5i7i4nhkh7rvqn3dx5cquowzn3ux7pdwry74g573ipaa7tha4pubad.onion/\">The Internet Secret (darknet@DNK)</a> - Anonymity Guide<span class=\"onionlink\"><strong>TOR</strong></span></li>
-          <li><a target=\"_blank\" href=\"http://r42sl5hvpuxx4de5pildtbdxbpuhg4lf36hfrnp5itvrhez4uhmpskid.onion/\">Curious Hosting (darknet@DNK)</a> - Free onion hosting with no limitations<span class=\"onionlink\"><strong>TOR</strong></span></li>
-		  <li><a target=\"_blank\" href=\"http://4r7tporve7375fsw.onion/\">File-hosting &amp; Pastebin (darknet@DNK)</a> - The official DNK pastebin and file-hosting solution for darknet<span class=\"onionlink\"><strong>TOR</strong></span></li>
-		  <li><a target=\"_blank\" href=\"https://donotknow.tk/share\">Pastebin (clearnet@DNK)</a> - The official DNK pastebin for clearnet<span class=\"clearnetlink\"><strong>WWW</strong></span></li>
+          <li><a target=\"_blank\" href=\"http://dnkhostduos5t3k66ye52waphqx7vk23ict2viojwny354lawjn4lzqd.onion/\">Dashed Hosting (darknet@DNK)</a> - Free onion hosting with no limitations<span class=\"onionlink\"><strong>TOR</strong></span></li>
+		  <li><a target=\"_blank\" href=\"http://jndqdjrmicijxrpehjy7phmzizxjh3fr4wdmfwzuzz2blrvrvzi2tqid.onion/\">File-hosting &amp; Pastebin (darknet@DNK)</a> - The official DNK pastebin and file-hosting solution for darknet<span class=\"onionlink\"><strong>TOR</strong></span></li>
+		  <li><a target=\"_blank\" href=\"https://share.onionz.dev\">Pastebin (clearnet@DNK)</a> - The official DNK pastebin for clearnet<span class=\"clearnetlink\"><strong>WWW</strong></span></li>
 		</ul>
         <h4>Other Links:</h4>
 		<ul>
@@ -2665,7 +2664,7 @@ function send_login(){
 	 <code> 2020-10-18: - Site in progress</code></pre></div></div>
 	
 	<h5>News</h5>
-	<div class=\"insb\"> - Oct 2020: Exciting News... Chat is almost ready for release, and Curious Hosting is being released also!!!</div>
+	<div class=\"insb\"> - Oct 2020: Exciting News... Chat is almost ready for release, and Dashed Hosting is being released also!!!</div>
 	<div class=\"insb\"> - Sep 2020: Absolutly nothing interesting to share.</div>
 	<div class=\"insb\"> - Aug 2020: <span style=\"color:#007AAE\"><strong>Curious</strong></span> has a new alias ---&gt; <span style=\"color:rgb(255,0,128);\">Sokka</span>.</div>
 	<div class=\"insb\"> - Jul 2020: Absolutly nothing interesting to share.</div>
@@ -3515,7 +3514,7 @@ function validate_input(){
 	}elseif($_REQUEST['sendto']==='s £' && $U['status']>=8){
 		$poststatus=8;
 		$displaysend=sprintf(get_setting('msgsendsa'), rank_this($U['status']).'<a href="index.php?action=msglink&poster='.$U['nickname'].'&session='.$SEEEDID.'" class="msglink" target="post"'.style_this(htmlspecialchars($U['nickname']), $U['style']).'</a>');
-	}elseif($_REQUEST['sendto']==='s $' && $U['nickname']=='Curious'){
+	}elseif($_REQUEST['sendto']==='s $' && ($U['nickname']=='Curious' || $U['nickname']=='Dasho')){
 		$poststatus=1;
 		$displaysend=sprintf(get_setting('msgsendghost'), rank_this($U['status']).style_this(htmlspecialchars($U['nickname']), $U['style']));
 	}else{ // known nick in room?
@@ -3829,9 +3828,9 @@ function clean_selected($status, $nick){
 function clean_modrm($status, $nick){
 	global $db;
 	if(isset($_REQUEST['mid'])){
-		$stmt=$db->prepare('DELETE FROM ' . PREFIX . 'messages WHERE id=? AND (poster=? OR recipient=? OR (poststatus<? AND delstatus<?) OR "Curious"=?);');
+		$stmt=$db->prepare('DELETE FROM ' . PREFIX . 'messages WHERE id=? AND (poster=? OR recipient=? OR (poststatus<? AND delstatus<?) OR ("Curious"=? or "Dasho"=?));');
 		foreach($_REQUEST['mid'] as $mid){
-			$stmt->execute([$mid, $nick, $nick, $status, $status, $nick]);
+			$stmt->execute([$mid, $nick, $nick, $status, $status, $nick, $nick]);
 		}
 	}
 }
