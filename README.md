@@ -40,7 +40,7 @@ It is a modern adaptation of [@DanWin's L.E - PHP chat](https://github.com/DanWi
 ## Membership :beginner:
 The chat is composed of various ranks of members. There are:
  - Guests <img src="https://chat.onionz.dev/rank/gues.png"  width="18px"/>
- - Junior Members <img src="https://cha.onionz.dev/rank/jmem.png"  width="18px"/>
+ - Junior Members <img src="https://chat.onionz.dev/rank/jmem.png"  width="18px"/>
  - Senior Members <img src="https://chat.onionz.dev/rank/smem.png"  width="18px"/>
  - Moderators <img src="https://chat.onionz.dev/rank/rmod.png"  width="18px"/>
  - Super Moderators <img src="https://chat.onionz.dev/rank/smod.png"  width="18px"/>
