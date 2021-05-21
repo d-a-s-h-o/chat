@@ -1902,7 +1902,8 @@ function send_notes($type){
 	}elseif($type===1){
 		echo "<h2>$I[publicnotes]</h2><p>";
 		$hiddendo=hidden('do', 'public');
-	if(isset($_REQUEST['text'])){
+    }
+    if(isset($_REQUEST['text'])){
 		if(MSGENCRYPTED){
 			$_REQUEST['text']=openssl_encrypt($_REQUEST['text'], 'aes-256-cbc', ENCRYPTKEY, 0, '1234567890123456');
 		}
@@ -2737,6 +2738,7 @@ function print_notifications(){
 	}
 	echo '</span>';
 }
+
 function print_chatters(){
 	global $I, $U, $db, $language;
 	if(!$U['hidechatters']){
