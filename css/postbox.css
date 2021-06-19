@@ -179,3 +179,25 @@
   border-width: 0.1em;
   color: var(--button-text-col);
 }
+#forum_link,
+#emoji_link {
+  padding: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--accent2);
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+  color: var(--button-text-col);
+  transition: background-color, color, 0.3s;
+  transition-timing-function: ease-in-out;
+}
+#forum_link:hover,
+#emoji_link:hover {
+  padding: 0.3em;
+  color: var(--accent2);
+  background-color: var(--accent);
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid var(--accent2);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}

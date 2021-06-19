@@ -47,3 +47,60 @@
 .messages #chatters a {
   text-decoration: none;
 }
+
+div#room {
+    display: block !important;
+    width: 20% !important;
+    overflow-y: auto !important;
+    position: fixed !important;
+    right: -30px !important;
+    bottom: 40px !important;
+}
+
+div#room h4 {
+    color:var(--accent) !important;
+}
+
+div#room select[name="room"] {
+  background-color: var(--accent);
+  color: var(--accent2);
+  padding: 0.3em;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}
+
+div#room select[name="room"]:hover {
+  padding: 0.3em;
+  text-align: left;
+  color: var(--accent);
+  background-color: var(--accent2);
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}
+
+div#room input[type="submit"] {
+  background-color: var(--accent2);
+  color: var(--button-text-col);
+  padding: 0.1em;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid var(--accent);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}
+
+.post input[type="submit"]:hover {
+  padding: 0.1em;
+  text-align: left;
+  color: var(--accent2);
+  background-color: var(--accent);
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid var(--accent2);
+  border-radius: 0.2em;
+  border-width: 0.1em;
+}

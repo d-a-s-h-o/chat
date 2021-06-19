@@ -32,7 +32,7 @@
   text-align: left;
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2),
     0px 0px 8px -1px rgba(0, 0, 0, 0.19);
-  background-color: var(--card-bg) !important;
+  background-color: var(--lg-tx) !important;
   border-radius: 8px;
   padding: 0.01em 16px;
   left: 0;
@@ -48,7 +48,7 @@
 .idiv:target {
   width: 100vw;
   text-align: center;
-  color: var(--lg-tx) !important;
+  color: var(--accent) !important;
   position: absolute;
   margin-top: -24px;
   margin-left: calc(100vw - 100%);
@@ -111,13 +111,13 @@
 }
 
 .idivc a:link {
-  color: #005174;
+  color: #fff;
 }
 .idivc a:visited {
-  color: #87799f;
+  color: #999;
 }
 .idivc a:hover {
-  color: #121525;
+  color: #aaa;
   text-decoration: none;
 }
 

@@ -8,8 +8,10 @@
   --theme: dark;
   --accent-halloween: #d68d20;
   --accent-temp: #b4b0b0;
-  --accent: #2ECC71;
+  --accent: #ffff80;
+  --accent4: #2ECC71;
   --accent2: #1a1e23;
+  --accent3: #000000;
   --onion: #59316b;
   --onion-hover: #59316b80;
   --red: #f90921;
@@ -20,7 +22,7 @@
   /* Chat Depth Levels */
   --lv3-col: #000000; /* Deepest Level */
   --lv2-col: #121416; /* Middle Level */
-  --lv1-col: var(--accent2); /* Shallowest Level */
+  --lv1-col: var(--accent3); /* Shallowest Level */
 
   /* Login Info */
   --lg-tx: #121525;

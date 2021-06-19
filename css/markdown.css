@@ -77,12 +77,12 @@ ul {
   padding:0;
   font-size:15px;
   line-height:116%;
-  color:#121525;
+  color:var(--accent);
   font-weight:bolder;
   }
   
   .ins{
   font-size:15px;
   line-height:116%;
-  color:#121525;
+  color:var(--accent);
   }
