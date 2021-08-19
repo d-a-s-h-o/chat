@@ -33,7 +33,7 @@ When you have everything installed and use MySQL or PostgreSQL, you'll have to c
 Note: If you updated the script, please visit `http://(server)/(script-name).php?action=setup` again, to make sure, that any database changes are applied and no errors occur.
 
 ## About :information_source:
-This chat is part of The Onionz Project, developed by [@Dasho](https://dasho.dev). He manage it all through [hub@Onionz](https://hub.onionz.dev).
+This chat is part of The Onionz Project, developed by [@Dasho](https://dasho.dev). He manages it all through [hub@Onionz](https://hub.onionz.dev).
 
 It is a modern, and improved adaptation of [@DanWin's L.E - PHP chat](https://github.com/DanWin/le-chat-php). It has some added features and a lot of CSS upgrades. It works in full flow without JavaScript, which is it's design for use on Tor. It's just like the regular version... just better. If you plan on making it better... let me know. I'm always adding features and am currently working on a Git alternative that integrates directly with the chat. Sort of like GitHub and Gitter I guess, but also JavaScript free. All support is welcomed.
 
@@ -57,7 +57,3 @@ You can replicate, modify, and/or distribute this code, and others freely. You d
 ## Brief of The Project & Team
 ### The Onionz Project :computer_mouse:
 The Onionz Project is a web-project designed to make the web more accessible to everyone, while respecting their privacy and financial restrictions. Every thing that it provides is **FREE** and allows for **complete anonymity**, although you do need to smart about that yourself. It can be self-hosted for added privacy, and it’s package gets larger every day. (Or week, or month). The Onionz community host many different services, and welcomes everyone into it. It is focused on accessibility and freedom. It's that simple. You are welcome to contact Dasho @  [the chat](https://chat.onionz.dev/)  if you have any questions at all regarding yourself and the internet.
-
-### The Null Network (Team) :busts_in_silhouette:
-
-The Null Network is a small network of users of The Onionz Project dedicated to moderating and building it. The Null Network currently consists of @Dasho, @winkyface, and @Nemo. These users are helped by Senior Members, currently @TILTER @simone @Anton @CtrlAltDel @JMax @arco @tonc and  @ATOM.
