@@ -353,6 +353,7 @@ function print_stylesheet($init=false){
 	echo 's forwards;z-index:2;background-color:#500000;border:2px solid #ff0000;} ';
 	echo '@keyframes timeout_messages{0%{top:-200%;} 99%{top:-200%;} 100%{top:0%;}} ';
 	echo '.notes textarea{height:80vh;width:80%;}iframe{width:100%;height:100%;margin:0;padding:0;border:none}';
+	echo '@import url("style.css");';
 	echo '</style>';
 	if($init){
 		return;
@@ -364,7 +365,7 @@ function print_stylesheet($init=false){
 	}else{
 		$colbg=get_setting('colbg');
 	}
-	echo "<link rel=\"shortcut icon\" href=\"https://cdn.onionz.dev/global/images/favicon.svg\">";
+	echo "<link rel=\"shortcut icon\" href=\"https://cdn.sokka.dev/global/images/favicon.svg\">";
 	//overwrite with custom css
 	echo "<style type=\"text/css\">body{background-color:#$colbg;color:#$coltxt;} $css</style>";
 	echo "<link rel=\"preload\" href=\"style.css\" as=\"style\"><link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">";
@@ -3169,20 +3170,8 @@ function send_colours(){
 	echo '</b></kbd>'.form('profile').submit($I['backtoprofile'], ' class="backbutton"').'</form>';
 	print_end();
 }
-function is_onion(){
-    if($_SERVER['SERVER_NAME']=='chat.onionz.dev'){
-        return false;
-    }else{
-        return true;
-    }
-}
 
 function nav(){
-    if(is_onion()){
-        $onion=true;
-    }else{
-        $onion=false;
-    }
 	echo '
 	<div class="navbartitle"><a href="#" style="text-decoration: none; color: #fff;">The Underground Railroad</a></div>
 	<nav class="topnav">
@@ -3190,20 +3179,8 @@ function nav(){
 	<li><a href="#ABOUT" target="_self">About</a></li>
 	<li><a href="#CNGLOG" target="_self">Changelog and News</a></li>
 	<li><a href="#LINKS" target="_self">Links</a></li>
-	<li><a href="';
-	if(!$onion){
-	    echo 'https://github.com/thenullnetwork/chatterbox';
-	}else{
-	    echo 'http://dnkgitith76l6ljojzoxzadhvgvj74vl6os6ft4wnef4gxhfbc2ghzad.onion/thenullnetwork/chatterbox/releases';
-	}
-	    echo '" target="_blank">Source</a></li>
-	<a class="wgbtn" href="#logincbox">Login</a><a class="wgbtn" href="';
-	if(!$onion){
-	    echo 'https://host.onionz.dev/';
-	}else{
-	    echo 'http://dnkhostduos5t3k66ye52waphqx7vk23ict2viojwny354lawjn4lzqd.onion/';
-	}
-	    echo '" target="_blank">Hosting</a>
+	<li><a href="https://github.com/d-a-s-h-o/chat" target="_blank">Source</a></li>
+	<a class="wgbtn" href="#logincbox">Login</a><a class="wgbtn" href="https://host.sokka.io/" target="_blank">Hosting</a>
 	</ul> </nav>';
 }
 
@@ -3280,20 +3257,11 @@ function send_login(){
 	//echo '</p>'.credit();
 	//echo '</p>'; 
 	echo '</table>';
-	
-	if(is_onion()){
-	    $hostlink = 'http://dnkhostduos5t3k66ye52waphqx7vk23ict2viojwny354lawjn4lzqd.onion/';
-	    $git = 'http://dnkgitith76l6ljojzoxzadhvgvj74vl6os6ft4wnef4gxhfbc2ghzad.onion/';
-	    $uploadlink = 'http://jndqdjrmicijxrpehjy7phmzizxjh3fr4wdmfwzuzz2blrvrvzi2tqid.onion/';
-	    $danslink = 'http://danschat356lctri3zavzh6fbxg2a7lo6z3etgkctzzpspewu7zdsaqd.onion/';
-	    $class = 'darknet';
-	}else{
-	    $hostlink = 'https://host.onionz.dev/';
-	    $git = 'https://git.onionz.dev/';
-	    $uploadlink = 'https://upload.onionz.dev/';
+	    $hostlink = 'https://host.sokka.io/';
+	    $git = 'https://git.sokka.io/';
+	    $uploadlink = 'https://upload.sokka.io/';
 	    $danslink = 'https://chat.danwin1210.me/';
 	    $class = 'clearnet';
-	}
 	
 	echo '</div></div></div>';
 	echo "<div class=\"odiv\"><div class=\"splash\"><h2><strong>Welcome to The Underground Railroad</strong></h2><div class=\"splashcard\"><br>
@@ -3301,7 +3269,7 @@ function send_login(){
 	<strong>Welcome to The Underground Railroad - <em>The most over-compensating chat on tor</em>.</strong>
 	<br>Are you looking for a fun - stress free, user friendly - totally secret awesome badass cool darkweb chat? That's such a coincidence, because that's what this is. All you have to do is press the <strong>Login</strong> button in the top right hand corner, enter your credentials, and start chatting. If you want to chat anonymously, just enter any nickname press <strong>Enter Chat</strong> straight away and get at it. We hope you have fun!
 	<br><br>
-	<div class=\"callout alert\" style=\"background: none; border: 2px; border-style: solid; border-color: #ffff80; border-radius: 0.5em; padding: 1em; color: white; margin-left: 10%; margin-right: 10%;\">  <p style=\"color: white; text-align: center\"><center>The <span style=\"color: #ffff80;\">Underground</span> Rules</center></p><hr><ol>  <li><span style=\"color: #f4e80c;\">No CP, Zoophilia, other Pornography, or Gore.</span></li>  <li>Freedom of speech is welcomed, but be nice.</li>  <li>Please <span style=\"color: #f4e80c;\">be respectful</span> to other chatters</li>  <li>Please <span style=\"color: #f4e80c;\">use meaningful</span> and <span style=\"color: #f4e80c;\">non-offensive nicknames</span>. No pedo nicks.</li>  <li>Please <span style=\"color: #f4e80c;\">use English</span> in the Main Chat please.</li>  <li>Please <span style=\"color: #f4e80c;\">no advertising</span> with out staff approval .</li>  <li>No drug or gun endorsements, or endorsements of other illegal markets.</li></ol> <hr /></div>
+	<div class=\"callout alert\" style=\"background: none; border: 2px; border-style: solid; border-color: #ffff80; border-radius: 0.5em; padding: 1em; color: white; margin-left: 10%; margin-right: 10%;\">  <p style=\"color: white; text-align: center\"><center>The <span style=\"color: #ffff80;\">Underground</span> Rules</center></p><hr><ol>  <li><span style=\"color: #f4e80c;\">Nothing gross or illegal.</span></li>  <li>Freedom of speech is welcomed, but be nice.</li>  <li>Please <span style=\"color: #f4e80c;\">be respectful</span> to other chatters</li>  <li>Please <span style=\"color: #f4e80c;\">use meaningful</span> and <span style=\"color: #f4e80c;\">non-offensive nicknames</span>. No pedo nicks.</li>  <li>Please <span style=\"color: #f4e80c;\">use English</span> in the Main Chat please.</li>  <li>Please <span style=\"color: #f4e80c;\">no advertising</span> with out staff approval .</li>  <li>No drug or gun endorsements, or endorsements of other illegal markets.</li></ol> <hr /></div>
 	<br><br>
 	</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	<div class=\"tip\" style=\"position: fixed; bottom : 0; width: 100%\"><h4 style=\"color:white;\">~ Dasho ~</h4></div>
@@ -3314,7 +3282,7 @@ function send_login(){
         <br>
         <h4>Important Contacts:</h4>
         <ul style=\"list-style-type: &quot; &quot;\">
-          <li><a href=\"mailto:dasho@onionz.dev\" class=\"ImContact\" title=\"dasho@onionz.dev\">@Dasho</a> - Hosting person thing ..? (F**KEN GENIUS)</li>
+          <li><a href=\"mailto:o_o@dasho.dev\" class=\"ImContact\" title=\"o_o@dasho.dev\">@Dasho</a> - Hosting person thing ..? (F**KEN GENIUS)</li>
           <ul style=\"list-style-type: &quot; &#10150; &quot;\">";
             if(is_onion()){
                 echo "<li><a href=\"http://sonarmsng5vzwqezlvtu2iiwwdn3dxkhotftikhowpfjuzg7p3ca5eid.onion/contact/Dasho\" class=\"ImContact\" title=\"Sonar\" target=\"_blank\">Sonar</a></li>";
@@ -3357,7 +3325,7 @@ function send_login(){
 	<h5>Changelog</h5>
 	 <p>This is a record of improvements or milestones of the Chat. It could be very detailed, but only big things will be listed.</p> <div class=\"scrollbox\"><div class=\"sbc\"><pre>
 	 <code> 2021-06-17: - The Chatterbox has been updated to -&gt; The Underground Railroad, in respect to the G2 update.</code><br>
-	 <code> 2021-01-06: - The Chatterbox source code has been released <a href=\"https://git.onionz.dev/thenullnetwork/chatterbox\" target=\"_blank\">here</a>.</code><br>
+	 <code> 2021-01-06: - The Chatterbox source code has been released <a href=\"https://github.com/d-a-s-h-o/chat\" target=\"_blank\">here</a>.</code><br>
 	 <code> 2021-01-01: - Happy New Year!!!!</code><br>
 	 <code> 2020-12-28: - Server Updates and New Improvements.</code><br>
 	 <code> 2020-11-19: - Chatterbox v2 is coming soon with a all new built in (and JS free) git solution. Also, a new version of the Dashed Hosting is now in use with bug fixes and better configuration. Existing hostees can request an upgrade either here or via <a href=\"http://sonarmsng5vzwqezlvtu2iiwwdn3dxkhotftikhowpfjuzg7p3ca5eid.onion/contact/Dasho\" target=\"_blank\">Sonar</a> (make sure to include your project codename).</code><br />
